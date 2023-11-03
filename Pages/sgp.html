@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SGP - Système de Gestion et de Suivi de Projet</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+ 
+  <link rel="shortcut icon" href="../logos/H.png" type="image/x-icon">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+</head>
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+</style>
+<body ng-app="sgpApp">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#" style="color: aliceblue;">SGP - Système de Gestion et de Suivi de Projet</a>
+      </div>
+      <div class="container-fluid d-flex justify-content-end">
+        <a href="../Pages/Project.html" class="btn bg-light">Mes Projets</a>
+      </div>
+    </nav>
+  </header>
+<br><br><br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="../images/vb2.png" alt="Capture d'écran 1" class="img-fluid" style="height: 300px;">
+        </div>
+        <div class="col-md-4">
+          <img src="../images/vb1.png" alt="Capture d'écran 2" class="img-fluid"  style="height: 300px;" width="500PX">
+        </div>
+         <div class="col-md-4">
+          <img src="../images/vb3.png" alt="Capture d'écran 2" class="img-fluid" style="height: 300px;">
+        </div>
+      </div>
+    </div>
+  </section>
+  <main ng-controller="SGPController">
+    <section class="py-5">
+      <div class="container">
+        <h1 class="text-center">SGP - Système de Gestion et de Suivi de Projet</h1>
+        <p>Le SGP (Système de Gestion et de Suivi de Projet) permet de garder une trace sur les projets, ses tâches, les membres qui ont réalisé la tâche, sa livraison et les commentaires liés à chaque tâche.</p>
+        <p>Le projet est réalisé en VB dot Net et la base de données sous Microsoft Access. Il est programmé pour deux types d'utilisateurs :</p>
+        <ul>
+          <li>L'administrateur qui peut gérer le projet.</li>
+          <li>L'espace membre qui peut gérer les tâches qui lui ont été affectées.</li>
+        </ul>
+        <p></p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="text-center py-4">
+      <p></p>
+    </div>
+  </footer>
+  <!-- AngularJS app script -->
+  <script>
+    angular.module('sgpApp', []);
+    angular.module('sgpApp').controller('SGPController', function() {
+      // Logique du contrôleur, si nécessaire
+    });
+  </script>
+</body>
+</html>

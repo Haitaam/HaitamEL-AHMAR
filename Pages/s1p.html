@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Section1 de protetion</title>
+
+  <link rel="shortcut icon" href="../logos/H.png" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+
+  <!-- AngularJS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+</head>
+
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+</style>
+
+<body ng-app="locamotoApp">
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#" style="color: aliceblue;">S1 Protection</a>
+      </div>
+      <div class="container-fluid d-flex justify-content-end" >
+        <a href="../Pages/Project.html" class="btn bg-light">Mes Projets</a>
+    </div>
+    </nav>
+  </header>
+
+  <br><br><br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="../images/s1p.png" alt="Image 1" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+          <img src="../images/s1p2.png" alt=""  class="img-fluid">
+        
+        </div>
+        <div class="col-md-4">
+          <img src="../images/s1p3.png" alt="Image 3" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <main ng-controller="HomeController">
+    <section class="py-5">
+      <div class="container">
+        <h1 class="text-center">Section1 de Protection</h1>
+        <p>Ce site est dynamique et offre une gamme de services de sécurité pour répondre à vos besoins. Que vous ayez besoin de contrôle d'accès, d'accompagnement du personnel, de surveillance d'espaces publics, de sécurisation après intrusion ou de services pour des événements exceptionnels, nous sommes là pour assurer votre sécurité.</p>
+        <ol>
+          <li>Large choix de services</li>
+          <li>Flexibilité de solutions</li>
+          <li>Réservation en ligne facile</li>
+          <li>Assurance incluse pour votre tranquillité d'esprit</li>
+          <li>Des professionnels dévoués</li>
+        </ol>
+         </div>
+    </section>
+  </main>
+  
+
+  <footer>
+    <div class="text-center py-4">
+      <p>&copy; 2022 S1 protection . Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  
+
+</body>
+
+</html>

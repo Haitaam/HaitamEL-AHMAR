@@ -1,0 +1,569 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins-med;
+}
+
+@font-face {
+  font-family: poppins-med;
+  src: url(Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: poppins-bold;
+  src: url(Poppins/Poppins-Bold.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Base styles for larger screens */
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background-image: url(images/planet-earth-night-view-illuminated-orbit-dark-background-5k-1920x1080-8934.jpg);
+  z-index: 2;
+  transition: 1s;
+  background-size: cover;
+  animation: backgroundSwitch 15s ease-in; 
+}
+
+
+
+.showcase.active {
+  right: 300px;
+}
+
+.showcase header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 90px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #fff;
+}
+
+.toggle {
+  position: relative;
+  width: 50px;
+  height: 60px;
+  background: url("logos/1564512_burger_catalogue_list_menu_icon.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+
+.toggle.active {
+  background: url("logos/103181_close_remove_delete_cross_icon.png");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.text {
+  position: relative;
+  z-index: 10;
+}
+
+.text h2 {
+  font-size: 3rem;
+  color: #fffcfc;
+  
+  font-weight: 700;
+  line-height: 3rem;
+  margin: 0;
+}
+
+.text h3 {
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 3rem;
+  margin: 0;
+}
+
+div h3 {
+  font-size: 2rem;
+  line-height: 1em;
+  padding-left: 5px;
+}
+
+strong {
+  font-size: 2rem;
+  font-weight: 1000;
+  text-decoration: underline;
+  letter-spacing: 3px;
+}
+
+.text p {
+  font-size: 2rem;
+  color: #cac8c8;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+  font-family: 700;
+  line-height: 1em;
+  padding-left: 5px;
+}
+
+.text a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  background: #fff;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.text a:hover {
+  letter-spacing: 10px;
+}
+
+.Menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+/* Styles for menu items */
+.Menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Menu ul li {
+  margin-bottom: 20px;
+}
+
+.Menu ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #343535;
+  transition: all 0.1s ease;
+  padding: 10px 20px; /* Add padding to make the links touch-friendly */
+}
+
+/* Styles for menu items on hover */
+.Menu ul li a:hover {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-decoration: underline;
+  background-color: #eee;
+  color: #343535;
+}
+
+@media (max-width: 667px) {
+  /* Styles de base pour tous les appareils */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins-med', sans-serif;
+}
+
+/* Ajoutez vos styles généraux ici */
+@font-face {
+  font-family: 'poppins-med';
+  src: url(Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: 'poppins-bold';
+  src: url(Poppins/Poppins-Bold.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins-med', sans-serif;
+  background-color: #fff; /* Changez la couleur de fond selon vos préférences */
+}
+
+/* Styles pour les écrans de 667px ou moins */
+@media (max-width: 667px) {
+  /* Ajoutez vos styles spécifiques pour les écrans de 667px ou moins ici */
+  /* Par exemple, ajustez la taille de la police, les marges, etc. */
+}
+
+/* Styles pour les écrans de 768px ou moins */
+@media (max-width: 768px) {
+  .showcase {
+    padding: 20px; /* Réduisez la marge intérieure pour économiser de l'espace */
+  }
+
+  .loggo {
+    font-size: 18px; /* Ajustez la taille de la police du logo */
+  }
+
+  .toggle {
+    width: 25px; /* Ajustez la taille du bouton de menu mobile */
+    height: 25px;
+    background-size: 15px;
+  }
+
+  .text h2 {
+    font-size: 1.5rem; /* Ajustez la taille de la police pour les titres */
+    line-height: 1.8rem; /* Espace entre les lignes */
+  }
+
+  .text h3 {
+    font-size: 1.3rem; /* Ajustez la taille de la police pour les sous-titres */
+    line-height: 1.6rem;
+  }
+
+  div h3 {
+    font-size: 1.1rem; /* Ajustez la taille de la police pour les éléments de sous-titre */
+  }
+
+  strong {
+    font-size: 1.3rem; /* Ajustez la taille de la police pour les éléments forts */
+    letter-spacing: 1px;
+  }
+
+  .text p {
+    font-size: 1.2rem; /* Ajustez la taille de la police pour les paragraphes */
+    margin: 15px 0;
+    padding-left: 3px;
+  }
+
+  .text a {
+    font-size: 1.2rem; /* Ajustez la taille de la police pour les liens */
+    padding: 8px 15px;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(images/planet-earth-night-view-illuminated-orbit-dark-background-5k-1920x1080-8934.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.text {
+  text-align: center; /* Centrer le texte sur mobile */
+}
+
+.text h2 {
+  font-size: 1.8rem; /* Ajustez la taille de la police pour les titres */
+  color: #fffcfc;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 2rem; /* Espace entre les lignes */
+  margin: 0;
+}
+
+.text h3 {
+  font-size: 1.5rem; /* Ajustez la taille de la police pour les sous-titres */
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 2rem;
+  margin: 0;
+}
+
+div h3 {
+  font-size: 1.2rem; /* Ajustez la taille de la police pour les éléments de sous-titre */
+  line-height: 1.2em;
+  padding-left: 5px;
+}
+
+strong {
+  font-size: 1.5rem; /* Ajustez la taille de la police pour les éléments forts */
+  font-weight: 700;
+  text-decoration: underline;
+  letter-spacing: 2px;
+}
+
+.text p {
+  font-size: 1.4rem; /* Ajustez la taille de la police pour les paragraphes */
+  color: #cac8c8;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 100%;
+  line-height: 1.4em;
+  padding-left: 5px;
+}
+
+.text a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.4rem; /* Ajustez la taille de la police pour les liens */
+  font-weight: 700;
+  padding: 10px 20px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  background: #fff;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.text a:hover {
+  letter-spacing: 6px; /* Ajustez l'espacement des lettres au survol */
+}
+
+/* Styles pour le menu mobile */
+.Menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+.Menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Menu ul li {
+  margin: 10px 0; /* Ajoutez un peu d'espace entre les éléments de menu */
+}
+
+.Menu ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 1rem; /* Ajustez la taille de la police pour les éléments de menu */
+  font-weight: 500;
+  color: #343535;
+  padding: 10px 20px;
+  transition: all 0.8s ease;
+}
+
+.Menu ul li a:hover {
+  font-size: 1rem; /* Ajustez la taille de la police pour les éléments de menu au survol */
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  background-color: #eee;
+  color: #343535;
+}
+
+}
+@media (max-width: 768px) {
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins-med', sans-serif;
+}
+
+/* Ajoutez vos styles généraux ici */
+@font-face {
+  font-family: 'poppins-med';
+  src: url(Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: 'poppins-bold';
+  src: url(Poppins/Poppins-Bold.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins-med', sans-serif;
+  background-color: #fff; /* Changez la couleur de fond selon vos préférences */
+}
+
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(images/planet-earth-night-view-illuminated-orbit-dark-background-5k-1920x1080-8934.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.text {
+  text-align: center; /* Centrer le texte sur mobile */
+}
+
+.text h2 {
+  font-size: 1.8rem; /* Ajustez la taille de la police pour les titres */
+  color: #fffcfc;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 2rem; /* Espace entre les lignes */
+  margin: 0;
+}
+
+.text h3 {
+  font-size: 1.5rem; /* Ajustez la taille de la police pour les sous-titres */
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 2rem;
+  margin: 0;
+}
+
+div h3 {
+  font-size: 1.2rem; /* Ajustez la taille de la police pour les éléments de sous-titre */
+  line-height: 1.2em;
+  padding-left: 5px;
+}
+
+strong {
+  font-size: 1.5rem; /* Ajustez la taille de la police pour les éléments forts */
+  font-weight: 700;
+  text-decoration: underline;
+  letter-spacing: 2px;
+}
+
+.text p {
+  font-size: 1.4rem; /* Ajustez la taille de la police pour les paragraphes */
+  color: #cac8c8;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 100%;
+  line-height: 1.4em;
+  padding-left: 5px;
+}
+
+.text a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.4rem; /* Ajustez la taille de la police pour les liens */
+  font-weight: 700;
+  padding: 10px 20px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  background: #fff;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.text a:hover {
+  letter-spacing: 6px; /* Ajustez l'espacement des lettres au survol */
+}
+
+/* Styles pour le menu mobile */
+.Menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+.Menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Menu ul li {
+  margin: 10px 0; /* Ajoutez un peu d'espace entre les éléments de menu */
+}
+
+.Menu ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 1.4rem; /* Ajustez la taille de la police pour les éléments de menu */
+  font-weight: 700;
+  color: #343535;
+  padding: 10px 20px;
+  border: 2px solid #000000;
+  transition: all 0.8s ease;
+}
+
+.Menu ul li a:hover {
+  font-size: 1.5rem; /* Ajustez la taille de la police pour les éléments de menu au survol */
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-decoration: underline;
+  background-color: #eee;
+  color: #343535;
+}
+}
+
+
+
+.contact {
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.contact h2 {
+  font-size: 2.3rem;
+  margin: 0 0 10px;
+  color: #fffefe;
+}
+
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links a {
+  text-decoration: none;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+

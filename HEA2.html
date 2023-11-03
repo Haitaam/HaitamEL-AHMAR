@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haitam EL Ahmar</title>
+    <link rel="stylesheet" href="HEA2.css">
+    
+    <link rel="shortcut icon" href="logos/H.png" type="image/x-icon">
+</head>
+<body>
+    <style>
+    
+        #typewriter {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.15em solid rgb(243, 243, 243);
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation: typing 1.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+    </style>
+    <div class="showcasse"></div>
+    <section class="showcase ">
+        <header>
+           <h2 class="loggo"><img src="logos/HE.png" alt="" height="40px" ></h2>
+           <div class="toggle "></div>
+        </header>
+    
+        <div class="overlay"></div>
+        <div class="text">
+            <h2 id="1">Haitam EL AHMAR</h2>
+            <h3><strong>Chef de Projet Informatique<br><span id="typewriter"></span></h3>
+
+          
+        </div>
+       
+      
+    </section>
+    <div class="Menu">
+        <ul>
+          <li><a href="Pages/Project.html">Mes projets</a></li>
+          
+            <li><a href="Pages/contact.html">A propos et contact</a></li>
+          
+          
+      
+            
+        </ul>
+    </div>
+    
+    <script>
+      const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+    
+
+      const text =  [" Web Developer", " Front-end Developer", " Back-end Developer", " Full Stack Developer"];
+let index = 0;
+let letterIndex = 0;
+let typingInterval = setInterval(type, 100);
+
+function type() {
+  const span = document.getElementById("typewriter");
+  const currentText = text[index];
+  span.textContent += currentText[letterIndex];
+  letterIndex++;
+  if (letterIndex === currentText.length) {
+    index++;
+    if (index === text.length) {
+      index = 0;
+    }
+    clearInterval(typingInterval);
+    setTimeout(() => {
+      span.textContent = "";
+      letterIndex = 0;
+      typingInterval = setInterval(type, 100);
+    }, 2000);
+  }
+}
+ </script>
+   
+    
+</body>
+</html>

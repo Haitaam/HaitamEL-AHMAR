@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locamoto - Location de motos</title>
+
+  <link rel="shortcut icon" href="../logos/H.png" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+
+  <!-- AngularJS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+</head>
+
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+</style>
+
+<body ng-app="locamotoApp">
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#" style="color: aliceblue;">Locamoto</a>
+      </div>
+      <div class="container-fluid d-flex justify-content-end" >
+        <a href="../Pages/Project.html" class="btn bg-light">Mes Projets</a>
+    </div>
+    </nav>
+  </header>
+
+  <br><br><br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="../images/lcm1.png" alt="Image 1" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+          <video src="../videos/lcm.mp4" autoplay muted controls class="img-fluid">
+       
+        </div>
+        <div class="col-md-4">
+          <img src="../images/lcm3.png" alt="Image 3" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <main ng-controller="HomeController">
+    <section class="py-5">
+      <div class="container">
+        <h1 class="text-center">Locamoto - Location de motos</h1>
+        <p>Locamoto est un service de location de motos qui vous permet de profiter de la liberté de la conduite
+          motocycliste sans avoir à posséder votre propre moto. Que vous ayez besoin d'une moto pour une balade en ville,
+          une escapade à la campagne ou une aventure sur la route, Locamoto vous offre une solution pratique et
+          abordable.</p>
+        <p>Les avantages de Locamoto sont nombreux :</p>
+        <ol>
+          <li>Large choix de motos : Locamoto propose une gamme variée de motos adaptées à tous les types de conducteurs
+            et de préférences.</li>
+          <li>Flexibilité de location : Vous pouvez choisir la durée de location qui vous convient, que ce soit pour une
+            journée, une semaine ou plus.</li>
+          <li>Tarifs compétitifs : Les tarifs de location de Locamoto sont compétitifs et transparents, sans frais cachés.
+          </li>
+          <li>Réservation en ligne : Vous pouvez facilement réserver votre moto préférée en ligne, en quelques clics.</li>
+          <li>Assurance incluse : Toutes les locations de motos chez Locamoto incluent une assurance pour vous offrir une
+            tranquillité d'esprit.</li>
+        </ol>
+        <p>Que vous soyez un passionné de motos ou un conducteur occasionnel, Locamoto vous offre une solution de
+          location de motos pratique et abordable, vous permettant de profiter de la conduite sans les tracas de la
+          possession d'une moto.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="text-center py-4">
+      <p>&copy; 2023 Locamoto. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- AngularJS app script -->
+  <script>
+    angular.module('locamotoApp', []);
+    angular.module('locamotoApp').controller('HomeController', function() {
+      // Logique du contrôleur, si nécessaire
+    });
+  </script>
+
+</body>
+
+</html>

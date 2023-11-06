@@ -73,9 +73,13 @@ body{
 }
 
 .navbar-toggler-icon {
-  background-color: #fff;
+  background-image: url(/logos/1564512_burger_catalogue_list_menu_icon.png);
+  transform: scale(1);
 }
-
+.navbar-toggler-icon:hover {
+  background-image: url(/logos/1564512_burger_catalogue_list_menu_icon.png);
+  transform: scale(1.2);
+}
 /* Custom styles for the text */
 .text {
   color: #fff;
@@ -151,12 +155,9 @@ body{
     transform: scale(1.3);
   }
   
-  .navbar-toggler-icon {
-    background-color: #fff;
-  }
+ 
   .nav-link{
     opacity: 90%;
  
   }
- 
 }

@@ -1,102 +1,91 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Site d'annonces de services d'architectes</title>
-
-  <link rel="shortcut icon" href="../logos/H.png" type="image/x-icon">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
-
-  <!-- Angular app -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haitam EL Ahmar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="../logos/H.png" type="image/x-icon">
 </head>
-<style>
-      body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        margin: 0;
-    }
-</style>
+<body>
+  
 
-<body ng-app="architectApp">
-
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#" style="color: aliceblue;">Archima</a>
-            </div> 
-            <div class="container-fluid d-flex justify-content-end" >
-                <a href="../Pages/Project.html" class="btn bg-light">Mes Projets</a>
+  <div class="container-fluid">
+    <header class="showcase">
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="#"><img src="../logos/HE.png" alt="" height="40px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Pages/Project.html">Mes projets</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
-    
-    
-  <br><br><br>
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <img src="../images/Archima.png" alt="Image 1" class="img-fluid">
-        </div>
-        <div class="col-md-4">
-          <img src="../images/inscriarchima.png" alt="Image 2" class="img-fluid">
-        </div>
-        <div class="col-md-4">
-          <img src="../images/profil.png" alt="Image 3" class="img-fluid">
-        </div>
+</div> 
+<br> <br><br>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="../images/Archima.png" alt="Image 1" class="img-fluid" width="300px" height="250px">
       </div>
+      <div class="col-md-4">
+        <img src="../images/inscriarchima.png" alt="Image 2" class="img-fluid" width="300px" height="250px">
+      </div>
+      <div class="col-md-4">
+        <img src="../images/profil.png" alt="Image 3" class="img-fluid" width="300px" height="250px">
+      </div>
+    </div>
+  </div>
+</section>
+
+<main ng-controller="HomeController">
+  <section class="py-5">
+    <div class="container">
+      <h1 class="text-center">Site d'annonces de services d'architectes</h1>
+      <p>Le site web vise à fournir une plateforme en ligne pour les architectes et les clients potentiels afin de
+        faciliter les connexions entre les deux parties.</p>
+      <p>Les avantages d'un tel site web sont nombreux :</p>
+      <ol>
+        <li>Visibilité accrue : Les architectes peuvent mettre en avant leurs services et leurs projets sur la
+          plateforme pour améliorer leur visibilité en ligne.</li>
+        <li>Facilité de recherche : Les clients potentiels peuvent facilement trouver des architectes en fonction de
+          leurs besoins spécifiques grâce à des filtres de recherche.</li>
+        <li>Gain de temps : Les clients potentiels peuvent gagner du temps en trouvant rapidement des architectes qui
+          répondent à leurs exigences sans effectuer de recherches approfondies en ligne.</li>
+        <li>Meilleure communication : Les clients potentiels peuvent facilement communiquer avec les architectes via
+          la plateforme pour obtenir des devis, des informations sur les services, etc.</li>
+        <li>Références et avis : Les clients potentiels peuvent accéder aux avis et références des architectes pour
+          prendre des décisions éclairées avant de les engager.</li>
+        <li>Augmentation de la clientèle : Les architectes peuvent étendre leur base de clients en étant exposés à un
+          plus grand nombre de clients potentiels.</li>
+      </ol>
+      <p>En résumé, le site d'annonces de services d'architectes peut offrir une plateforme efficace et pratique pour
+        les architectes et les clients potentiels afin de se connecter, en améliorant la visibilité de l'entreprise,
+        en attirant de nouveaux clients et en améliorant la communication avec les clients potentiels.</p>
     </div>
   </section>
 
-  <main ng-controller="HomeController">
-    <section class="py-5">
-      <div class="container">
-        <h1 class="text-center">Site d'annonces de services d'architectes</h1>
-        <p>Le site web vise à fournir une plateforme en ligne pour les architectes et les clients potentiels afin de
-          faciliter les connexions entre les deux parties.</p>
-        <p>Les avantages d'un tel site web sont nombreux :</p>
-        <ol>
-          <li>Visibilité accrue : Les architectes peuvent mettre en avant leurs services et leurs projets sur la
-            plateforme pour améliorer leur visibilité en ligne.</li>
-          <li>Facilité de recherche : Les clients potentiels peuvent facilement trouver des architectes en fonction de
-            leurs besoins spécifiques grâce à des filtres de recherche.</li>
-          <li>Gain de temps : Les clients potentiels peuvent gagner du temps en trouvant rapidement des architectes qui
-            répondent à leurs exigences sans effectuer de recherches approfondies en ligne.</li>
-          <li>Meilleure communication : Les clients potentiels peuvent facilement communiquer avec les architectes via
-            la plateforme pour obtenir des devis, des informations sur les services, etc.</li>
-          <li>Références et avis : Les clients potentiels peuvent accéder aux avis et références des architectes pour
-            prendre des décisions éclairées avant de les engager.</li>
-          <li>Augmentation de la clientèle : Les architectes peuvent étendre leur base de clients en étant exposés à un
-            plus grand nombre de clients potentiels.</li>
-        </ol>
-        <p>En résumé, le site d'annonces de services d'architectes peut offrir une plateforme efficace et pratique pour
-          les architectes et les clients potentiels afin de se connecter, en améliorant la visibilité de l'entreprise,
-          en attirant de nouveaux clients et en améliorant la communication avec les clients potentiels.</p>
-      </div>
-    </section>
+ 
+</main>
 
-   
-  </main>
+<footer>
+  <div class="text-center py-4">
+    <p>&copy; Haitam EL AHMAR . Tous droits réservés.</p>
+  </div>
+</footer>
 
-  <footer>
-    <div class="text-center py-4">
-      <p></p>
-    </div>
-  </footer>
 
-  <!-- Angular app script -->
-  <script>
-    angular.module('architectApp', []);
-    angular.module('architectApp').controller('HomeController', function() {
-      // Logique du contrôleur, si nécessaire
-    });
-  </script>
 
-</body>
 
-</html>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+  </html>
+  

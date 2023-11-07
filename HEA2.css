@@ -48,11 +48,13 @@
 
 
 body{
-  background-image: url('images/astrau.jpg');
+  background-image: url('images/202.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  backdrop-filter:blur(0.9px);
 }
+
 
 /* Custom styles for the header */
 .showcase {
@@ -80,30 +82,27 @@ body{
   background-image: url(/logos/1564512_burger_catalogue_list_menu_icon.png);
   transform: scale(1.2);
 }
-/* Custom styles for the text */
 .text {
-  color: #fff;
+  color: #ffffff;
+  text-shadow: #000000;
   font-weight: bold;
   line-height: 1.6;
   align-items: center;
   margin-top: 150px;
-  background-color: rgba(0, 0, 0, 0.39);
-  width: 40%;
-  border-radius: 10px;
+  margin-left: 50px;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 50px;
 }
 
 h3 {
-  font-size: 28px;
-  text-decoration-line: underline;
-
+  font-size: 30px;
+  text-decoration-line: underline; 
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 28px;
 }
 a{
   color: #000000;

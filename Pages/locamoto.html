@@ -1,61 +1,54 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Locamoto - Location de motos</title>
-
-  <link rel="shortcut icon" href="../logos/H.png" type="image/x-icon">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
-
-  <!-- AngularJS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haitam EL Ahmar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="../logos/H.png" type="image/x-icon">
 </head>
+<body>
+  <div class="container-fluid">
+    <header class="showcase">
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="#"><img src="../logos/HE.png" alt="" height="40px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Pages/Project.html">Mes projets</a>
+                    </li>
+                  
+                </ul>
+            </div>
+        </nav>
+    </header>
+</div>
 
-<style>
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-  }
-</style>
-
-<body ng-app="locamotoApp">
-
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#" style="color: aliceblue;">Locamoto</a>
-      </div>
-      <div class="container-fluid d-flex justify-content-end" >
-        <a href="../Pages/Project.html" class="btn bg-light">Mes Projets</a>
-    </div>
-    </nav>
-  </header>
-
-  <br><br><br>
-
+  
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <br><br>
   <section>
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <img src="../images/lcm1.png" alt="Image 1" class="img-fluid">
+          <img src="../images/lcm1.png" alt="Image 1" class="img-fluid" width="300px" height="250px">
         </div>
         <div class="col-md-4">
-          <video src="../videos/lcm.mp4" autoplay muted controls class="img-fluid">
+          <video src="../videos/lcm.mp4" autoplay muted controls class="img-fluid" width="300px" height="250px">
        
         </div>
         <div class="col-md-4">
-          <img src="../images/lcm3.png" alt="Image 3" class="img-fluid">
+          <img src="../images/lcm3.png" alt="Image 3" class="img-fluid" width="300px" height="250px">
         </div>
       </div>
     </div>
   </section>
-  
-
   <main ng-controller="HomeController">
     <section class="py-5">
       <div class="container">
@@ -82,21 +75,17 @@
       </div>
     </section>
   </main>
+ 
 
   <footer>
-    <div class="text-center py-4">
-      <p>&copy; 2023 Locamoto. Tous droits réservés.</p>
-    </div>
-  </footer>
+  <div class="text-center py-4">
+    <p>&copy; Haitam EL AHMAR . Tous droits réservés.</p>
+  </div>
+   </footer>
 
-  <!-- AngularJS app script -->
-  <script>
-    angular.module('locamotoApp', []);
-    angular.module('locamotoApp').controller('HomeController', function() {
-      // Logique du contrôleur, si nécessaire
-    });
-  </script>
 
-</body>
-
-</html>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+  </html>
+  

@@ -11,10 +11,20 @@
 </head>
 <body>
   <style>
+     @font-face {
+    font-family: poppins-med;
+    src: url(../Poppins/Poppins-Light.ttf);
+  }
+  
+  @font-face {
+    font-family: poppins-bold;
+    src: url(../Poppins/Poppins-Bold.ttf);
+  }
     .showcase {
       padding: 2rem;
-      color: #000000;
+      color: #ffffff;
       text-align: center;
+      filter: invert(1);
     }
   
     .logo {
@@ -22,7 +32,9 @@
       font-weight: bold;
       margin: 0;
       padding: 0;
+      
     }
+   
   
     .toggle {
       display: flex;
@@ -32,21 +44,20 @@
     }
   
     .btn {
+        font-family: poppins;
+        font-size: large;
       display: inline-block;
       padding: 0.5rem 1rem;
       margin-left: 1rem;
-      border-radius: 4px;
       text-decoration: none;
-      color: #000000;
-      background-color: #fff;
-      border: 1px solid #000000;
+      color: #ffffff;
       transition: all 0.3s ease;
       transform: scale(1);
     }
   
     .btn:hover {
-      color: #fff;
-      background-color: #000000;
+      color: #000000;
+      background-color: #ffffff;
       border-color: #000000;
       cursor: pointer;
       transform: scale(1.2);
@@ -56,12 +67,11 @@
         flex-direction: column;
         min-height: 100vh;
         margin: 0;
-        background-image: url(../images/astrau.jpg);
+        background-image: url(../images/cool-background.png);
         background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-   backdrop-filter: blur(8px);
     }
 
     .container {
@@ -121,13 +131,15 @@ img:hover{
     display: flex;
     justify-content:center;
     margin: 20px;
+    border-radius: 15px;
 }
 
 .contact-card {
     text-align: center;
     padding: 10px;
     width: 100px;
-    background-color: #ffffff3f;
+    background-color: #1d1c1c3f;
+    
 }
 
 .contact-link {
@@ -185,7 +197,7 @@ img:hover{
         <p style="font-size: large; font-family: Arial, Helvetica, sans-serif;" >Je m'efforce de comprendre précisément les attentes de mes clients, qu'ils soient des PME, des associations ou des particuliers, et de créer des solutions de développement web personnalisées grâce à mon expérience variée. Je propose des tarifs adaptés à chaque projet, en veillant à satisfaire les besoins spécifiques de mes clients tout en tenant compte de leur budget, que ce soit pour des sites vitrines simples ou des projets complexes. Mon objectif est de fournir des services de développement web de haute qualité qui répondent aux exigences de chaque client de manière précise et personnalisée.</p>
     </div>
 </div></center>
-<center><h2 style="color: rgb(255, 255, 255);"><strong>CONTACTEZ-MOI</strong></h2></center>
+<center><h2 style="color: rgb(0, 0, 0);"><strong>CONTACTEZ-MOI</strong></h2></center>
 <div class="ctt">
     <div class="contact-card">
        <a href="mailto:haitamelahmar1@gmail.com"> <img src="../logos/4691507_gmail_icon.png" alt="" srcset="" height="35px"></a>

@@ -21,7 +21,9 @@
       font-weight: bold;
       margin: 0;
       padding: 0;
+     
     }
+    
   
     .btn {
       display: inline-block;
@@ -48,12 +50,11 @@
         flex-direction: column;
         min-height: 100vh;
         margin: 0;
-        background-image: url('../images/astrau.jpg'); /* Remplacez 'chemin/vers/votre/image.jpg' par le chemin réel de votre image de fond */
+        background-image: url('../images/cool-background.png'); /* Remplacez 'chemin/vers/votre/image.jpg' par le chemin réel de votre image de fond */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-   backdrop-filter: blur(8px);
     }
     
 
@@ -65,7 +66,7 @@
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.4);
     transform: scale(1.05);
 opacity: 1;
 }
@@ -77,7 +78,7 @@ opacity: 1;
   
   <section class="showcase">
     <header class="d-flex justify-content-between align-items-center">
-        <h2 class="loggo"><img src="../logos/HE.png" alt="" height="40px" ></h2>
+        <h2 class="loggo"><img src="../logos/HE.png" alt="" height="40px" style="filter: invert(1); transform: scale(1.2);" ></h2>
       <div class="toggle">
         <a href="../index.html"  class="btn">Accueil</a>
       </div>
@@ -86,7 +87,7 @@ opacity: 1;
    
  <div class="container my-5">
         <div class="title mb-4">
-            <h2 class="text-center" style="font-weight: bolder;" >Mes Projets</h2>
+            <h2 class="text-center" style="font-weight: bolder;" ></h2>
         </div>
 
         <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -94,10 +95,10 @@ opacity: 1;
                 <div class="card h-100">
                     <div class="card-body">
                         <i class="fas fa-bars"></i>
-                        <h5 class="card-title">Projet C</h5>
+                        <h5 class="card-title">LocaMoto V1.0</h5>
                         <p class="card-text">
                             <img class="img-fluid" src="../images/locamoto.jpg" alt="" width="250px" height="150px">
-                            <br>    LocaMoto V1.0
+                            <br>
                         </p>
                     </div>
                     <div class="card-footer">
@@ -110,14 +111,14 @@ opacity: 1;
                 <div class="card h-100">
                     <div class="card-body">
                         <i class="far fa-user"></i>
-                        <h5 class="card-title">Projet Front-End</h5>
+                        <h5 class="card-title">PressNetwork</h5>
                         <p class="card-text">
                             <img class="img-fluid" src="../images/Capture d’écran 2022-06-02 175131.png" alt="" width="250px" height="150px">
-                            <br>   PressNetwork
+                            <br> 
                         </p>
                     </div>
                     <div class="card-footer">
-                        <a href="https://press-network-1.netlify.app/" target="_blank" class="btn btn-primary stretched-link">Voir le site</a>
+                        <a href="../Pages/Pn.html" target="_blank" class="btn btn-primary stretched-link">Lire la suite</a>
                     </div>
                 </div>
             </div>
@@ -126,10 +127,10 @@ opacity: 1;
                 <div class="card h-100">
                     <div class="card-body">
                         <i class="far fa-bell"></i>
-                        <h5 class="card-title">VB.NET</h5>
+                        <h5 class="card-title">Gestion des projets</h5>
                         <p class="card-text">
                             <img class="img-fluid" src="../images/vb2.png" alt="" width="250px" height="150px">
-                            <br>  Gestion des projets
+                            <br>
                         </p>
                     </div>
                     <div class="card-footer">
@@ -141,10 +142,10 @@ opacity: 1;
                 <div class="card h-100">
                     <div class="card-body">
                         <i class="fas fa-bars"></i>
-                        <h5 class="card-title">Front-End</h5>
+                        <h5 class="card-title">Sectcion1 de protection</h5>
                         <p class="card-text">
                             <img class="img-fluid" src="../images/s1p.png" alt="" width="250px" height="150px">
-                            <br>    Sectcion1 de protection
+                            <br>    
                         </p>
                     </div>
                     <div class="card-footer">
@@ -156,10 +157,10 @@ opacity: 1;
                 <div class="card h-100">
                     <div class="card-body">
                         <i class="far fa-bell"></i>
-                        <h5 class="card-title">passwordManagerApp</h5>
+                        <h5 class="card-title">Gestion des mots de passes</h5>
                         <p class="card-text">
                             <img class="img-fluid" src="../images/pm1.png" alt="" width="250px" height="150px">
-                            <br>  Gestion des mots de passes
+                            <br>  
                         </p>
                     </div>
                     <div class="card-footer">
@@ -170,10 +171,10 @@ opacity: 1;
                 <div class="card h-100">
                     <div class="card-body">
                         <i class="far fa-bell"></i>
-                        <h5 class="card-title">Projet Front et Back-end </h5>
+                        <h5 class="card-title">Annonces de services d'architectes en ligne </h5>
                         <p class="card-text">
                             <img class="img-fluid" src="../images/Archima.png" alt="" width="250px" height="150px">
-                           <br> Annonces de services d'architectes en ligne
+                           <br>
                         </p>
                     </div>
                     <div class="card-footer">
@@ -190,10 +191,10 @@ opacity: 1;
                 <div class="card h-100">
                     <div class="card-body">
                         <i class="far fa-bell"></i>
-                        <h5 class="card-title">Projet VBNET</h5>
+                        <h5 class="card-title">SuperCalcolator</h5>
                         <p class="card-text">
                             <img class="img-fluid" src="../images/spc.png" alt="" width="250px" height="150px">
-                            <br>   SuperCalcolator
+                            <br>
                         </p>
                     </div>
                     <div class="card-footer">

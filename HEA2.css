@@ -26,7 +26,6 @@
   
   
 }
-
 @keyframes typing {
   from {
     width: 0;
@@ -42,21 +41,20 @@
     border-color: transparent;
   }
   50% {
-    border-color: #ffffff; /* Adjust the color as needed */
+    border-color: #000000; /* Adjust the color as needed */
   }
 }
 
 
 body{
-  background-image: url('images/202.jpg');
+  background-image: url('images/cool-background.png');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  backdrop-filter:blur(0.9px);
+  
+
 }
 
-
-/* Custom styles for the header */
 .showcase {
   /* Replace with your image path */
   background-size: cover;
@@ -75,29 +73,29 @@ body{
 }
 
 .navbar-toggler-icon {
-  background-image: url(/logos/1564512_burger_catalogue_list_menu_icon.png);
+  background-image: url(logos/1564512_burger_catalogue_list_menu_icon.png);
   transform: scale(1);
 }
 .navbar-toggler-icon:hover {
-  background-image: url(/logos/1564512_burger_catalogue_list_menu_icon.png);
+  background-image: url(logos/1564512_burger_catalogue_list_menu_icon.png);
   transform: scale(1.2);
 }
 .text {
-  color: #ffffff;
-  text-shadow: #000000;
+  color: #000000;
+  text-shadow: #ffffff;
   font-weight: bold;
   line-height: 1.6;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 140px;
   margin-left: 50px;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 60px;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 50px;
   text-decoration-line: underline; 
 }
 
@@ -127,23 +125,33 @@ a{
   cursor: pointer;
   transform: scale(1.1);
 }
+#cnt{
+  margin-left: 50px;
+  width: 30%;
+  height: 70px;
+}
+.img-fluid:hover{
+  transform:scaleX(1.1); 
+}
 
+.navbar-brand img{
+  filter: invert(1);
+}
 
 @media (max-width: 667px) {
   .showcase {
     padding: 30px 0;
   }
 body{
-  background-image: url(images/bg.jpg);
+  background-image: url(images/cool-background.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
 }
   .text {
+    color: #000000;
     margin-top: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 80%;
-    border-radius: 10px;
+    
   }
   .navbar-brand img {
     transition: transform 0.2s;
@@ -154,9 +162,22 @@ body{
     transform: scale(1.3);
   }
   
- 
   .nav-link{
     opacity: 90%;
  
   }
+  h1 {
+    font-size: 30px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    text-decoration-line: underline; 
+  }
+  
+  h4 {
+    font-size: 18px;
+  }
+
+ 
 }

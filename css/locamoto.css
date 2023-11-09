@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins-med;
+  }
+  
+  @font-face {
+    font-family: poppins-med;
+    src: url(../Poppins/Poppins-Light.ttf);
+  }
+  
+  @font-face {
+    font-family: poppins-bold;
+    src: url(../Poppins/Poppins-Bold.ttf);
+  }
+  #typewriter {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 0.25em solid #ffffff; 
+    white-space: nowrap;
+    letter-spacing: 0.15em;
+    animation: typing 1.5s steps(30, end), blink-caret 0.5s step-end infinite;
+    font-weight: bolder;
+    font-size: larger;
+    
+    
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #000000; /* Adjust the color as needed */
+    }
+  }
+  
+  
+  body{
+    background-image: url('../images/cool-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+  
+  }
+  
+  .showcase {
+    /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  .navbar-brand img {
+    transition: transform 0.3s;
+    filter: invert(1);
+  }
+  
+  .navbar-brand img:hover {
+    transform: scale(1.5);
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url(../logos/1564512_burger_catalogue_list_menu_icon.png);
+    transform: scale(1);
+    filter: invert(1);
+  }
+  .navbar-toggler-icon:hover {
+    background-image: url(../logos/1564512_burger_catalogue_list_menu_icon.png);
+    transform: scale(1.2);
+  }
+  .text {
+    color: #000000;
+    text-shadow: #ffffff;
+    font-weight: bold;
+    line-height: 1.6;
+    align-items: center;
+    margin-top: 140px;
+    margin-left: 50px;
+  }
+  
+ p{
+    font-size: 20px;
+ }
+ .img-fluid{
+    border-radius: 5px;
+ }
+  a{
+    color: #000000;
+    font-weight: bold;
+  }
+  .nav-link{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    filter: invert(1);
+  }
+  .nav-link:hover {
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  #cnt{
+    margin-left: 50px;
+    width: 30%;
+    height: 70px;
+  }
+  .img-fluid:hover{
+    transform:scaleX(1.1); 
+  }
+  
+ 
+  
+  @media (max-width: 667px) {
+    .showcase {
+      padding: 30px 0;
+    }
+  body{
+    background-image: url(../images/cool-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+    .text {
+      color: #000000;
+      margin-top: 50px;
+      
+    }
+    .navbar-brand img {
+      transition: transform 0.2s;
+      transform: scale(1);
+    }
+    
+    .navbar-brand img:hover {
+      transform: scale(1.3);
+    }
+    
+    .nav-link{
+      opacity: 90%;
+   
+    }
+    h1 {
+      font-size: 30px;
+    }
+    
+    h3 {
+      font-size: 20px;
+      text-decoration-line: underline; 
+    }
+    
+    h4 {
+      font-size: 18px;
+    }
+  
+   
+  }
+  

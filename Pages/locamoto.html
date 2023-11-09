@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haitam EL Ahmar</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="shortcut icon" href="../logos/H.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/locamoto.css">
+  <link rel="shortcut icon" href="../logos/H.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   
+  <title>Locamoto</title>
 </head>
 <body>
+  
+  
   <div class="container-fluid">
     <header class="showcase">
         <nav class="navbar navbar-expand-lg ">
@@ -21,71 +24,44 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../Pages/Project.html">Mes projets</a>
                     </li>
-                  
                 </ul>
             </div>
         </nav>
     </header>
 </div>
 
-  
-    <div class="loader-wrapper">
-      <span class="loader"><span class="loader-inner"></span></span>
-  </div>
-  <br><br>
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <img src="../images/lcm1.png" alt="Image 1" class="img-fluid" width="300px" height="250px">
-        </div>
-        <div class="col-md-4">
-          <video src="../videos/lcm.mp4" autoplay muted controls class="img-fluid" width="300px" height="250px">
-       
-        </div>
-        <div class="col-md-4">
-          <img src="../images/lcm3.png" alt="Image 3" class="img-fluid" width="300px" height="250px">
-        </div>
-      </div>
+<div class="container">
+  <div class="row justify-content-center"> <!-- Utilisation de justify-content-center pour centrer la colonne -->
+    <div class="col-md-8 text-center"> <!-- Utilisation de text-center pour centrer le contenu dans la colonne -->
+      <video src="../videos/lcm.mp4"   controls class="img-fluid" width="800">
+        Votre navigateur ne prend pas en charge la balise vidéo.
+      </video>
     </div>
-  </section>
-  <main ng-controller="HomeController">
-    <section class="py-5">
-      <div class="container">
-        <h1 class="text-center">Locamoto - Location de motos</h1>
-        <p>Locamoto est un service de location de motos qui vous permet de profiter de la liberté de la conduite
-          motocycliste sans avoir à posséder votre propre moto. Que vous ayez besoin d'une moto pour une balade en ville,
-          une escapade à la campagne ou une aventure sur la route, Locamoto vous offre une solution pratique et
-          abordable.</p>
-        <p>Les avantages de Locamoto sont nombreux :</p>
-        <ol>
-          <li>Large choix de motos : Locamoto propose une gamme variée de motos adaptées à tous les types de conducteurs
-            et de préférences.</li>
-          <li>Flexibilité de location : Vous pouvez choisir la durée de location qui vous convient, que ce soit pour une
-            journée, une semaine ou plus.</li>
-          <li>Tarifs compétitifs : Les tarifs de location de Locamoto sont compétitifs et transparents, sans frais cachés.
-          </li>
-          <li>Réservation en ligne : Vous pouvez facilement réserver votre moto préférée en ligne, en quelques clics.</li>
-          <li>Assurance incluse : Toutes les locations de motos chez Locamoto incluent une assurance pour vous offrir une
-            tranquillité d'esprit.</li>
-        </ol>
-        <p>Que vous soyez un passionné de motos ou un conducteur occasionnel, Locamoto vous offre une solution de
-          location de motos pratique et abordable, vous permettant de profiter de la conduite sans les tracas de la
-          possession d'une moto.</p>
-      </div>
-    </section>
-  </main>
- 
-
-  <footer>
-  <div class="text-center py-4">
-    <p>&copy; Haitam EL AHMAR . Tous droits réservés.</p>
   </div>
-   </footer>
+</div>
 
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
-  </html>
+
+<main ng-controller="HomeController">
+  <section class="py-5">
+    <div class="container">
+      <h1 class="text-center">LOCAMOTO Version 1.0</h1>
+      <p>LOCAMOTO Version 1.0 est une application réalisée par Prénom NOM, étudiant en 1ère année à
+      l'Institut Supérieur de Génie Informatique en vue de l'obtention du Mastère Européen en
+      Informatique : Manager de projets informatiques. Diplôme d'État Français et Européen.</p>
+      
+      <p>LOCAMOTO 1.0 permet de garder une trace des locations de motos et établit des états des recettes
+      par dates.</p>
+      
+      <p>LOCAMOTO utilise la programmation procédurale en langage C et exploite la technique des fichiers
+      de données de type .dat.</p>
+      
+    </div>
+    </section>
+</main>
   
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>

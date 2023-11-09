@@ -62,6 +62,7 @@
     text-align: center;
     color: #fff;
     padding: 50px 0;
+    
   }
   
   .navbar-brand img {
@@ -81,6 +82,8 @@
   .navbar-toggler-icon:hover {
     background-image: url(../logos/1564512_burger_catalogue_list_menu_icon.png);
     transform: scale(1.2);
+    
+    filter: invert(1);
   }
   .text {
     color: #000000;
@@ -172,6 +175,6 @@
       font-size: 18px;
     }
   
-   
+    
   }
   

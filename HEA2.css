@@ -75,6 +75,8 @@ body{
 .navbar-toggler-icon {
   background-image: url(logos/1564512_burger_catalogue_list_menu_icon.png);
   transform: scale(1);
+  
+  filter: invert(1);
 }
 .navbar-toggler-icon:hover {
   background-image: url(logos/1564512_burger_catalogue_list_menu_icon.png);

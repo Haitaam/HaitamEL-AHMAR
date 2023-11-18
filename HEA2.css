@@ -293,10 +293,19 @@ a {
   background: #f3f5f7;
 }
 
-a,
+a {
+  color: #ffffff;
+}
 a:hover {
   text-decoration: none;
+  color: whitesmoke;
   transition: color 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+.tag__item :hover {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: large;
 }
 
 #pageHeaderTitle {
@@ -359,6 +368,9 @@ a:hover {
   .postcard__img_link {
     display: contents;
   }
+  .postcard__title {
+    color: #ffffff;
+  }
 
   .postcard__bar {
     width: 50px;
@@ -390,6 +402,7 @@ a:hover {
     margin: 20px 0 0 0;
     padding: 0;
     justify-content: center;
+    text-decoration: none;
 
     .tag__item {
       display: inline-block;

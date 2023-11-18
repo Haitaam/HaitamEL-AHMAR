@@ -17,14 +17,12 @@
 #typewriter {
   display: inline-block;
   overflow: hidden;
-  border-right: 0.25em solid #ffffff; 
+  border-right: 0.25em solid #ffffff;
   white-space: nowrap;
   letter-spacing: 0.15em;
   animation: typing 1.5s steps(30, end), blink-caret 0.5s step-end infinite;
   font-weight: bolder;
   font-size: larger;
-  
-  
 }
 @keyframes typing {
   from {
@@ -45,14 +43,11 @@
   }
 }
 
-
-body{
-  background-image: url('images/cool-background.png');
+body {
+  background-image: url("images/cool-background.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  
-
 }
 
 .showcase {
@@ -75,7 +70,7 @@ body{
 .navbar-toggler-icon {
   background-image: url(logos/1564512_burger_catalogue_list_menu_icon.png);
   transform: scale(1);
-  
+
   filter: invert(1);
 }
 .navbar-toggler-icon:hover {
@@ -93,22 +88,22 @@ body{
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 50px;
 }
 
 h3 {
-  font-size: 50px;
-  text-decoration-line: underline; 
+  font-size: 40px;
+  text-decoration-line: underline;
 }
 
 h4 {
-  font-size: 28px;
+  font-size: 25px;
 }
-a{
+a {
   color: #000000;
   font-weight: bold;
 }
-.nav-link{
+.nav-link {
   display: inline-block;
   padding: 0.5rem 1rem;
   margin-left: 1rem;
@@ -126,59 +121,388 @@ a{
   cursor: pointer;
   transform: scale(1.1);
 }
-#cnt{
-  margin-left: 50px;
-  width: 30%;
-  height: 70px;
+
+.navbar-brand img {
+  filter: invert(1);
 }
-.img-fluid:hover{
-  transform:scaleX(1.1); 
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #000000;
+  background-color: #fff;
+  border: 1px solid #000000;
+  transition: all 0.3s ease;
+  transform: scale(1);
 }
 
-.navbar-brand img{
-  filter: invert(1);
+.btn:hover {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.card {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Ajustez les valeurs pour personnaliser l'ombre */
+  transition: 0.3s;
+  transform: scale(1);
+  opacity: 85%;
+}
+
+.card:hover {
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+  opacity: 1;
+}
+.ctt {
+  display: flex;
+  margin: 20px;
+}
+
+.contact-card {
+  text-align: center;
+  padding: 10px;
+  width: 100px;
+}
+
+.contact-link {
+  text-decoration: none;
+  display: block;
+  margin: 5px;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+.contact-card:hover {
+  transform: scale(1.3);
+}
+.about-dev {
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(243, 241, 247, 0.189);
+  align-items: center;
+}
+
+.about-section {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+  color: #000000;
 }
 
 @media (max-width: 667px) {
+  .about-dev {
+    width: 90%;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ffffff3f;
+    align-items: center;
+  }
+
+  .about-section {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    color: #000000;
+  }
+  img {
+    max-width: 400px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+  img:hover {
+    object-fit: contain;
+    border-radius: 10px;
+    transform: scale(1.1);
+  }
+
+  .ctt {
+    display: flex;
+    margin: 20px;
+  }
+
+  .contact-card {
+    text-align: center;
+    padding: 10px;
+    width: 100px;
+  }
+
+  .contact-link {
+    text-decoration: none;
+    display: block;
+    margin: 5px;
+    transition: all 0.3s ease;
+    transform: scale(1);
+  }
+
   .showcase {
     padding: 30px 0;
   }
-body{
-  background-image: url(images/cool-background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-}
+  body {
+    background-image: url(images/cool-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
   .text {
     color: #000000;
     margin-top: 50px;
-    
   }
   .navbar-brand img {
     transition: transform 0.2s;
     transform: scale(1);
   }
-  
+
   .navbar-brand img:hover {
     transform: scale(1.3);
   }
-  
-  .nav-link{
+
+  .nav-link {
     opacity: 90%;
- 
   }
   h1 {
     font-size: 30px;
   }
-  
+
   h3 {
     font-size: 20px;
-    text-decoration-line: underline; 
+    text-decoration-line: underline;
   }
-  
+
   h4 {
     font-size: 18px;
   }
+}
 
- 
+.dark {
+  background: rgba(218, 215, 227, 0.078);
+}
+
+.light {
+  background: #f3f5f7;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+#pageHeaderTitle {
+  margin: 2rem 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #000000;
+}
+
+/* Cards */
+.postcard {
+  flex-wrap: wrap;
+  display: flex;
+
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+  border-radius: 10px;
+  margin: 0 0 2rem 0;
+  overflow: hidden;
+  position: relative;
+  color: #ffffff;
+
+  &.dark {
+    background-color: #18151f;
+  }
+  &.light {
+    background-color: #e1e5ea;
+  }
+
+  .t-dark {
+    color: #18151f;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  h1,
+  .h1 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .small {
+    font-size: 80%;
+  }
+
+  .postcard__title {
+    font-size: 1.75rem;
+  }
+
+  .postcard__img {
+    max-height: 180px;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .postcard__img_link {
+    display: contents;
+  }
+
+  .postcard__bar {
+    width: 50px;
+    height: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #424242;
+    transition: width 0.2s ease;
+  }
+
+  .postcard__text {
+    padding: 1.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .postcard__preview-txt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+    height: 100%;
+  }
+
+  .postcard__tagbox {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 14px;
+    margin: 20px 0 0 0;
+    padding: 0;
+    justify-content: center;
+
+    .tag__item {
+      display: inline-block;
+      background: rgba(83, 83, 83, 0.4);
+      border-radius: 3px;
+      padding: 2.5px 10px;
+      margin: 0 5px 5px 0;
+      cursor: default;
+      user-select: none;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background: rgba(83, 83, 83, 0.8);
+      }
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(-70deg, #424242, transparent 50%);
+    opacity: 1;
+    border-radius: 10px;
+  }
+
+  &:hover .postcard__bar {
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .postcard {
+    flex-wrap: inherit;
+
+    .postcard__title {
+      font-size: 2rem;
+    }
+
+    .postcard__tagbox {
+      justify-content: start;
+    }
+
+    .postcard__img {
+      max-width: 300px;
+      max-height: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    .postcard__text {
+      padding: 3rem;
+      width: 100%;
+    }
+
+    .media.postcard__text:before {
+      content: "";
+      position: absolute;
+      display: block;
+      background: #18151f;
+      top: -20%;
+      height: 130%;
+      width: 55px;
+    }
+
+    &:hover .postcard__img {
+      transform: scale(1.1);
+    }
+
+    &:nth-child(2n + 1) {
+      flex-direction: row;
+    }
+
+    &:nth-child(2n + 0) {
+      flex-direction: row-reverse;
+    }
+
+    &:nth-child(2n + 1) .postcard__text::before {
+      left: -12px !important;
+      transform: rotate(4deg);
+    }
+
+    &:nth-child(2n + 0) .postcard__text::before {
+      right: -12px !important;
+      transform: rotate(-4deg);
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .postcard__text {
+    padding: 2rem 3.5rem;
+  }
+
+  .postcard__text:before {
+    content: "";
+    position: absolute;
+    display: block;
+
+    top: -20%;
+    height: 130%;
+    width: 55px;
+  }
+
+  .postcard.dark {
+    .postcard__text:before {
+      background: #18151f;
+    }
+  }
+  .postcard.light {
+    .postcard__text:before {
+      background: #e1e5ea;
+    }
+  }
 }

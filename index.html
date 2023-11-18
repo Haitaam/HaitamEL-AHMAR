@@ -1,99 +1,552 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Haitam EL Ahmar</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="HEA2.css">
-    <link rel="shortcut icon" href="logos/H.png" type="image/x-icon">
-</head>
-<body>
-  <div class="loader-wrapper">
-    <span class="loader"><span class="loader-inner"></span></span>
-</div>
-  <div class="container-fluid">
-    <header class="showcase">
-        <nav class="navbar navbar-expand-lg ">
-            <a class="navbar-brand" href="#"><img src="logos/HE.png" alt="" height="40px"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="
-            filter: invert(1);">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="Pages/Project.html">Mes projets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Pages/contact.html">A propos et contact</a>
-                    </li>
-                </ul>
-            </div>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="HEA2.css" />
+    <link rel="shortcut icon" href="logos/H.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <div class="container-fluid">
+      <header class="showcase">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#"
+            ><img src="logos/HE.png" alt="" height="40px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="filter: invert(1)"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="Presentation-link"
+                  >PRÉSENTATION</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="mes-projets-link"
+                  >MES PROJETS</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
-    </header>
-</div>
-<div class="text">
-  <h1> <strong>Haitam EL AHMAR</strong></h1>
-  <h3><strong>Chef de Projet Informatique</strong></h3>
-  <h4>
-    <strong><span id="typewriter"></span></strong> 
-  </h4>
-</div>
-
-<div class="container" id="cnt">
-  <div class="row">
-      <div class="col-2">
-          <a href="mailto:haitamelahmar1@gmail.com" target="_blank">
-              <img src="logos/4691507_gmail_icon.png" alt="Gmail" class="img-fluid">
-          </a>
+      </header>
+    </div>
+    <div class="text">
+      <h1><strong>Haitam EL AHMAR</strong></h1>
+      <h3><strong>Chef de Projet Informatique</strong></h3>
+      <h4>
+        <strong><span id="typewriter"></span></strong>
+      </h4>
+    </div>
+    <!---->
+    <div class="ctt">
+      <div class="contact-card">
+        <a href="mailto:haitamelahmar1@gmail.com">
+          <img
+            src="logos/4691507_gmail_icon.png"
+            alt=""
+            srcset=""
+            height="35px"
+        /></a>
       </div>
-      <div class="col-2">
-        <a href="https://api.whatsapp.com/send?phone=0600092985" target="_blank">
-   <img src="logos/whatsapp.png" alt="WhatsApp" class="img-fluid" height="">
-          </a>
+
+      <div class="contact-card">
+        <a
+          href="https://api.whatsapp.com/send?phone=0600092985"
+          target="_blank"
+        >
+          <img src="logos/whatsapp.png" alt="" srcset="" height="40px"
+        /></a>
       </div>
-  </div>
-</div>
 
+      <div class="contact-card">
+        <a href="https://github.com/Haitaam" target="_blank">
+          <img src="logos/github.png" alt="" srcset="" height="40px"
+        /></a>
+      </div>
 
-  <script>
-  const text = ["Web Developer", "Front-end Developer", "Back-end Developer", "Full Stack Developer"];
-  let index = 0;
-  let letterIndex = 0;
-  let typingInterval = setInterval(type, 100);
+      <div class="contact-card">
+        <a
+          href="https://www.linkedin.com/in/haitam-el-ahmar-536b4b280/"
+          target="_blank"
+        >
+          <img src="logos/linkedin.png" alt="" srcset="" height="40px"
+        /></a>
+      </div>
 
-  function type() {
-    const span = document.getElementById("typewriter");
-    const currentText = text[index];
-    span.textContent += currentText[letterIndex];
-    letterIndex++;
-    if (letterIndex === currentText.length) {
-      index++;
-      if (index === text.length) {
-        index = 0;
+      <div class="contact-card">
+        <a href="../HaitamCV.pdf" target="_blank">
+          <img src="logos/cv.png" alt="" srcset="" height="40px"
+        /></a>
+      </div>
+    </div>
+    <!---->
+    <br />
+    <br />
+    <br />
+    <br />
+    <div>
+      <center>
+        <div class="about-dev">
+          <div class="about-section">
+            <h2 id="pre">A propos</h2>
+            <p
+              style="
+                font-size: large;
+                font-family: Arial, Helvetica, sans-serif;
+              "
+            >
+              Je suis un passionné de technologie et de football, deux domaines
+              qui me captivent au quotidien. En maître de la gestion du temps,
+              j'ai acquis la capacité de jongler entre mes deux passions avec
+              une aisance déconcertante. Toujours à la recherche de nouveaux
+              défis, je m'efforce constamment de repousser mes limites et de me
+              surpasser. Mon moteur ? L'envie d'explorer l'inconnu et de
+              continuer à progresser, que ce soit dans l'univers numérique ou
+              sur le terrain de football.
+            </p>
+          </div>
+          <img
+            src="images/ana2.jpg"
+            alt=""
+            width="500px"
+            style="max-width: 400px; object-fit: contain; border-radius: 10px"
+            onmouseover="this.style.transform='scale(1.01)'"
+            onmouseout="this.style.transform='scale(1)'"
+          />
+
+          <div class="about-section">
+            <h2>Développeur Informatique Indépendant</h2>
+            <p
+              style="
+                font-size: large;
+                font-family: Arial, Helvetica, sans-serif;
+              "
+            >
+              Je m'efforce de comprendre précisément les attentes de mes
+              clients, qu'ils soient des PME, des associations ou des
+              particuliers, et de créer des solutions de développement web
+              personnalisées grâce à mon expérience variée. Je propose des
+              tarifs adaptés à chaque projet, en veillant à satisfaire les
+              besoins spécifiques de mes clients tout en tenant compte de leur
+              budget, que ce soit pour des sites vitrines simples ou des projets
+              complexes. Mon objectif est de fournir des services de
+              développement web de haute qualité qui répondent aux exigences de
+              chaque client de manière précise et personnalisée.
+            </p>
+          </div>
+        </div>
+      </center>
+    </div>
+    <hr />
+
+    <hr />
+    <div id="mes-traveaux">
+      <section class="dark">
+        <div class="container py-4">
+          <h1 class="h1 text-center" id="pageHeaderTitle">
+            PROJETS RÉALISÉS
+            <hr />
+          </h1>
+
+          <article class="postcard dark blue">
+            <a class="postcard__img_link" href="Pages/locamoto.html">
+              <img
+                class="postcard__img"
+                src="images/locamoto.jpg"
+                alt="Image Title"
+              />
+            </a>
+            <div class="postcard__text">
+              <h1 class="postcard__title blue">
+                <a href="Pages/locamoto.html">LOCAMOTO</a>
+              </h1>
+              <div class="postcard__subtitle small">
+                <time datetime="2020-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mr-2"></i>2022
+                </time>
+              </div>
+              <div class="postcard__bar"></div>
+              <div class="postcard__preview-txt">
+                Locamoto vous offre une solution pratique et abordable que vous
+                ayez besoin d'une moto pour une balade en ville, une escapade à
+                la campagne ou une aventure sur la route.
+              </div>
+              <ul class="postcard__tagbox">
+                <li class="tag__item play red">
+                  <a href="Pages/locamoto.html"
+                    ><i class="fas fa-play mr-2"></i>Lire la suire</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="postcard dark red">
+            <a class="postcard__img_link" href="Pages/Pn.html">
+              <img
+                class="postcard__img"
+                src="images/pressnetwork.png"
+                alt="Image Title"
+              />
+            </a>
+            <div class="postcard__text">
+              <h1 class="postcard__title red">
+                <a href="Pages/Pn.html">PRESSNETWORK</a>
+              </h1>
+              <div class="postcard__subtitle small">
+                <time datetime="2020-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mr-2"></i>2022
+                </time>
+              </div>
+              <div class="postcard__bar"></div>
+              <div class="postcard__preview-txt">
+                Projet PressNetwork pour un Organisme de Presse Média
+                Réalisation d'un site web pour un organisme de presse média,
+                diffusant des informations sur divers événements tels que le
+                sport, la culture, la politique, etc.
+              </div>
+              <ul class="postcard__tagbox">
+                <li class="tag__item play red">
+                  <a href="Pages/Pn.html"
+                    ><i class="fas fa-play mr-2"></i>Lire la suite</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="postcard dark red">
+            <a class="postcard__img_link" href="Pages/spc.html">
+              <img
+                class="postcard__img"
+                src="images/spc.png"
+                alt="Image Title"
+              />
+            </a>
+            <div class="postcard__text">
+              <h1 class="postcard__title red">
+                <a href="Pages/spc.html">SUPERCALCOLATOR</a>
+              </h1>
+              <div class="postcard__subtitle small">
+                <time datetime="2020-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mr-2"></i>2022
+                </time>
+              </div>
+              <div class="postcard__bar"></div>
+              <div class="postcard__preview-txt">
+                La calculatrice MYSUPERCALCULATOR est une application développée
+                en VB.NET qui offre des fonctionnalités avancées de calcul. Elle
+                permet d'effectuer des opérations mathématiques telles que
+                l'addition, la soustraction, la multiplication et la division.
+              </div>
+              <ul class="postcard__tagbox">
+                <li class="tag__item play red">
+                  <a href="Pages/spc.html"
+                    ><i class="fas fa-play mr-2"></i>Lire la suite</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="postcard dark red">
+            <a class="postcard__img_link" href="Pages/s1p.html">
+              <img
+                class="postcard__img"
+                src="images/s1p.png"
+                alt="Image Title"
+              />
+            </a>
+            <div class="postcard__text">
+              <h1 class="postcard__title red">
+                <a href="Pages/s1p.html">SECTION 1 DE PROTECTION</a>
+              </h1>
+              <div class="postcard__subtitle small">
+                <time datetime="2020-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mr-2"></i>2022
+                </time>
+              </div>
+              <div class="postcard__bar"></div>
+              <div class="postcard__preview-txt">
+                Ce site est dynamique et offre une gamme de services de sécurité
+                pour répondre à vos besoins. Que vous ayez besoin de contrôle
+                d'accès, d'accompagnement du personnel, de surveillance
+                d'espaces publics, de sécurisation après intrusion ou de
+                services pour des événements exceptionnels, nous sommes là pour
+                assurer votre sécurité.
+              </div>
+              <ul class="postcard__tagbox">
+                <li class="tag__item play red">
+                  <a href="Pages/s1p.html"
+                    ><i class="fas fa-play mr-2"></i>Lire la suite</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="postcard dark red">
+            <a class="postcard__img_link" href="Pages/sgp.html">
+              <img
+                class="postcard__img"
+                src="images/vb2.png"
+                alt="Image Title"
+              />
+            </a>
+            <div class="postcard__text">
+              <h1 class="postcard__title red">
+                <a href="Pages/sgp.html">GESTION DU PROJETS</a>
+              </h1>
+              <div class="postcard__subtitle small">
+                <time datetime="2020-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mr-2"></i>2023
+                </time>
+              </div>
+              <div class="postcard__bar"></div>
+              <div class="postcard__preview-txt">
+                Le SGP (Système de Gestion et de Suivi de Projet) permet de
+                garder une trace des projets, des tâches, des membres qui les
+                ont réalisées, de la livraison et des commentaires associés.
+              </div>
+              <ul class="postcard__tagbox">
+                <li class="tag__item play red">
+                  <a href="Pages/sgp.html"
+                    ><i class="fas fa-play mr-2"></i>Lire la suite</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="postcard dark red">
+            <a class="postcard__img_link" href="Pages/Password_manager.html">
+              <img
+                class="postcard__img"
+                src="images/pm1.png"
+                alt="Image Title"
+              />
+            </a>
+            <div class="postcard__text">
+              <h1 class="postcard__title red">
+                <a href="Pages/Password_manager.html">PASSWORD MANAGER</a>
+              </h1>
+              <div class="postcard__subtitle small">
+                <time datetime="2020-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mr-2"></i>2023
+                </time>
+              </div>
+              <div class="postcard__bar"></div>
+              <div class="postcard__preview-txt">
+                Une application sécurisée appelée Password Manager vous permet
+                de stocker et de gérer tous vos mots de passe. Il vous permet de
+                créer des comptes avec des noms d'utilisateur et des mots de
+                passe uniques et de stocker des informations supplémentaires,
+                comme des notes pour chaque compte.
+              </div>
+              <ul class="postcard__tagbox">
+                <li class="tag__item play red">
+                  <a href="Pages/Password_manager.html"
+                    ><i class="fas fa-play mr-2"></i>Lire la suite</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="postcard dark red">
+            <a class="postcard__img_link" href="Pages/Archima.html">
+              <img
+                class="postcard__img"
+                src="images/Archima.png"
+                alt="Image Title"
+              />
+            </a>
+            <div class="postcard__text">
+              <h1 class="postcard__title red">
+                <a href="Pages/Archima.html">ARCHIMA</a>
+              </h1>
+              <div class="postcard__subtitle small">
+                <time datetime="2020-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mr-2"></i>2023
+                </time>
+              </div>
+              <div class="postcard__bar"></div>
+              <div class="postcard__preview-txt">
+                Afin de faciliter les interactions entre les architectes et les
+                clients potentiels, le site Web vise à fournir une plateforme en
+                ligne.
+              </div>
+              <ul class="postcard__tagbox">
+                <li class="tag__item play red">
+                  <a href="Pages/Archima.html"
+                    ><i class="fas fa-play mr-2"></i>Lire la suite</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="postcard dark red">
+            <a class="postcard__img_link" href="">
+              <img
+                class="postcard__img"
+                src="images/underc.jpg"
+                alt="Image Title"
+              />
+            </a>
+            <div class="postcard__text">
+              <h1 class="postcard__title red">
+                <a href="">Site web des stages(lesstages)</a>
+              </h1>
+              <div class="postcard__subtitle small">
+                <time datetime="2020-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mr-2"></i>2023
+                </time>
+              </div>
+              <div class="postcard__bar"></div>
+              <div class="postcard__preview-txt">
+                En cours de développement.
+              </div>
+              <ul class="postcard__tagbox">
+                <li class="tag__item play red">
+                  <!-- <a href=""><i class="fas fa-play mr-2"></i>Lire la suite</a>-->
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="postcard dark red">
+            <a class="postcard__img_link" href="">
+              <img
+                class="postcard__img"
+                src="images/underc.jpg"
+                alt="Image Title"
+              />
+            </a>
+            <div class="postcard__text">
+              <h1 class="postcard__title red">
+                <a href=""
+                  >GÉNÉRATEUR AUTOMATIQUE DE PROGRAMMES DE GESTION DE DONNÉES
+                  (GAPRO)</a
+                >
+              </h1>
+              <div class="postcard__subtitle small">
+                <time datetime="2020-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mr-2"></i>2023
+                </time>
+              </div>
+              <div class="postcard__bar"></div>
+              <div class="postcard__preview-txt">
+                En cours de développement.
+              </div>
+              <ul class="postcard__tagbox">
+                <li class="tag__item play red">
+                  <!-- <a href=""><i class="fas fa-play mr-2"></i>Lire la suite</a>-->
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      const text = [
+        "Web Developer",
+        "Front-end Developer",
+        "Back-end Developer",
+        "Full Stack Developer",
+      ];
+      let index = 0;
+      let letterIndex = 0;
+      let typingInterval = setInterval(type, 100);
+
+      function type() {
+        const span = document.getElementById("typewriter");
+        const currentText = text[index];
+        span.textContent += currentText[letterIndex];
+        letterIndex++;
+        if (letterIndex === currentText.length) {
+          index++;
+          if (index === text.length) {
+            index = 0;
+          }
+          clearInterval(typingInterval);
+          setTimeout(() => {
+            span.textContent = "";
+            letterIndex = 0;
+            typingInterval = setInterval(type, 100);
+          }, 2000);
+        }
       }
-      clearInterval(typingInterval);
-      setTimeout(() => {
-        span.textContent = "";
-        letterIndex = 0;
-        typingInterval = setInterval(type, 100);
-      }, 2000);
-    }
-  }
 
+      $(window).on("load", function () {
+        $(".loader-wrapper").fadeOut("slow");
+      });
+    </script>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Function to scroll to the target section
+        function scrollToTarget() {
+          const targetSection = document.getElementById("mes-traveaux");
+          targetSection.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+            inline: "start",
+            duration: 3000,
+          });
+        }
 
+        const mesProjetsLink = document.getElementById("mes-projets-link");
+        mesProjetsLink.addEventListener("click", function (event) {
+          event.preventDefault();
+          scrollToTarget();
+        });
+      });
 
-  $(window).on("load",function(){
-     $(".loader-wrapper").fadeOut("slow");
-});
-</script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Function to scroll to the target section
+        function scrollToTarget() {
+          const targetSection = document.getElementById("pre");
+          targetSection.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+            inline: "start",
+            duration: 3000,
+          });
+        }
 
+        const mesProjetsLink = document.getElementById("Presentation-link");
+        mesProjetsLink.addEventListener("click", function (event) {
+          event.preventDefault();
+          scrollToTarget();
+        });
+      });
+    </script>
 
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
-  </html>
-  
+</html>

@@ -1,79 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/locamoto.css">
-  <link rel="shortcut icon" href="../logos/H.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-   
-  <title>ArchiMA</title>
-</head>
-<body>
-  
-  
-  <div class="container-fluid">
-    <header class="showcase">
-        <nav class="navbar navbar-expand-lg ">
-            <a class="navbar-brand" href="#"><img src="../logos/HE.png" alt="" height="40px"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgba(0, 0, 0, 0.571);">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Pages/Project.html">Mes projets</a>
-                    </li>
-                </ul>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/locamoto.css" />
+    <link rel="shortcut icon" href="../logos/H.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <title>ArchiMA</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="showcase">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#"
+            ><img src="../logos/HE.png" alt="" height="40px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="background-color: rgba(0, 0, 0, 0.571)"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Accueil</a>
+              </li>
+            </ul>
+          </div>
         </nav>
-    </header>
-</div>
-
-<div class="container">
-  <div class="row justify-content-center"> <!-- Utilisation de justify-content-center pour centrer la colonne -->
-    <div class="col-md-8 text-center"> <!-- Utilisation de text-center pour centrer le contenu dans la colonne -->
-      <video src="../videos/archi.mp4"   controls class="img-fluid" width="800">
-        Votre navigateur ne prend pas en charge la balise vidéo.
-      </video>
+      </header>
     </div>
-  </div>
-</div>
 
-
-<main ng-controller="HomeController">
-  <section class="py-5">
     <div class="container">
-      <h1 class="text-center">Site d'annonces de services d'architectes</h1>
-      <p>Le site web vise à fournir une plateforme en ligne pour les architectes et les clients potentiels afin de
-        faciliter les connexions entre les deux parties.</p>
-      <p>Les avantages d'un tel site web sont nombreux :</p>
-      <ol>
-        <li>Visibilité accrue : Les architectes peuvent mettre en avant leurs services et leurs projets sur la
-          plateforme pour améliorer leur visibilité en ligne.</li>
-        <li>Facilité de recherche : Les clients potentiels peuvent facilement trouver des architectes en fonction de
-          leurs besoins spécifiques grâce à des filtres de recherche.</li>
-        <li>Gain de temps : Les clients potentiels peuvent gagner du temps en trouvant rapidement des architectes qui
-          répondent à leurs exigences sans effectuer de recherches approfondies en ligne.</li>
-        <li>Meilleure communication : Les clients potentiels peuvent facilement communiquer avec les architectes via
-          la plateforme pour obtenir des devis, des informations sur les services, etc.</li>
-        <li>Références et avis : Les clients potentiels peuvent accéder aux avis et références des architectes pour
-          prendre des décisions éclairées avant de les engager.</li>
-        <li>Augmentation de la clientèle : Les architectes peuvent étendre leur base de clients en étant exposés à un
-          plus grand nombre de clients potentiels.</li>
-      </ol>
-      <p>En résumé, le site d'annonces de services d'architectes peut offrir une plateforme efficace et pratique pour
-        les architectes et les clients potentiels afin de se connecter, en améliorant la visibilité de l'entreprise,
-        en attirant de nouveaux clients et en améliorant la communication avec les clients potentiels.</p>
+      <div class="row justify-content-center">
+        <!-- Utilisation de justify-content-center pour centrer la colonne -->
+        <div class="col-md-8 text-center">
+          <!-- Utilisation de text-center pour centrer le contenu dans la colonne -->
+          <video
+            src="../videos/archi.mp4"
+            controls
+            class="img-fluid"
+            width="800"
+          >
+            Votre navigateur ne prend pas en charge la balise vidéo.
+          </video>
+        </div>
+      </div>
     </div>
-  </section>
 
- 
-</main>
-  
-  
-
-</body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <main ng-controller="HomeController">
+      <section class="py-5">
+        <div class="container">
+          <h1 class="text-center">Site d'annonces de services d'architectes</h1>
+          <p>
+            Le site web vise à fournir une plateforme en ligne pour les
+            architectes et les clients potentiels afin de faciliter les
+            connexions entre les deux parties.
+          </p>
+          <p>Les avantages d'un tel site web sont nombreux :</p>
+          <ol>
+            <li>
+              Visibilité accrue : Les architectes peuvent mettre en avant leurs
+              services et leurs projets sur la plateforme pour améliorer leur
+              visibilité en ligne.
+            </li>
+            <li>
+              Facilité de recherche : Les clients potentiels peuvent facilement
+              trouver des architectes en fonction de leurs besoins spécifiques
+              grâce à des filtres de recherche.
+            </li>
+            <li>
+              Gain de temps : Les clients potentiels peuvent gagner du temps en
+              trouvant rapidement des architectes qui répondent à leurs
+              exigences sans effectuer de recherches approfondies en ligne.
+            </li>
+            <li>
+              Meilleure communication : Les clients potentiels peuvent
+              facilement communiquer avec les architectes via la plateforme pour
+              obtenir des devis, des informations sur les services, etc.
+            </li>
+            <li>
+              Références et avis : Les clients potentiels peuvent accéder aux
+              avis et références des architectes pour prendre des décisions
+              éclairées avant de les engager.
+            </li>
+            <li>
+              Augmentation de la clientèle : Les architectes peuvent étendre
+              leur base de clients en étant exposés à un plus grand nombre de
+              clients potentiels.
+            </li>
+          </ol>
+          <p>
+            En résumé, le site d'annonces de services d'architectes peut offrir
+            une plateforme efficace et pratique pour les architectes et les
+            clients potentiels afin de se connecter, en améliorant la visibilité
+            de l'entreprise, en attirant de nouveaux clients et en améliorant la
+            communication avec les clients potentiels.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </html>

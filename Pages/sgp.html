@@ -1,65 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/locamoto.css">
-  <link rel="shortcut icon" href="../logos/H.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-   
-  <title>Gestion et de Suivi de Projet</title>
-</head>
-<body>
-  
-  
-  <div class="container-fluid">
-    <header class="showcase">
-        <nav class="navbar navbar-expand-lg ">
-            <a class="navbar-brand" href="#"><img src="../logos/HE.png" alt="" height="40px"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgba(0, 0, 0, 0.571);">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../Pages/Project.html">Mes projets</a>
-                    </li>
-                </ul>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/locamoto.css" />
+    <link rel="shortcut icon" href="../logos/H.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <title>Gestion et de Suivi de Projet</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="showcase">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#"
+            ><img src="../logos/HE.png" alt="" height="40px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="background-color: rgba(0, 0, 0, 0.571)"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Accueil</a>
+              </li>
+            </ul>
+          </div>
         </nav>
-    </header>
-</div>
-
-<div class="container">
-  <div class="row justify-content-center"> <!-- Utilisation de justify-content-center pour centrer la colonne -->
-    <div class="col-md-8 text-center"> <!-- Utilisation de text-center pour centrer le contenu dans la colonne -->
-      <video src="../videos/sgp.mp4"   controls class="img-fluid" width="800">
-        Votre navigateur ne prend pas en charge la balise vidéo.
-      </video>
+      </header>
     </div>
-  </div>
-</div>
 
-
-
-<main ng-controller="SGPController">
-  <section class="py-5">
     <div class="container">
-      <h1 class="text-center">SGP - Système de Gestion et de Suivi de Projet</h1>
-      <p>Le SGP (Système de Gestion et de Suivi de Projet) permet de garder une trace sur les projets, ses tâches, les membres qui ont réalisé la tâche, sa livraison et les commentaires liés à chaque tâche.</p>
-      <p>Le projet est réalisé en VB dot Net et la base de données sous Microsoft Access. Il est programmé pour deux types d'utilisateurs :</p>
-      <ul>
-        <li>L'administrateur qui peut gérer le projet.</li>
-        <li>L'espace membre qui peut gérer les tâches qui lui ont été affectées.</li>
-      </ul>
-      <p></p>
+      <div class="row justify-content-center">
+        <!-- Utilisation de justify-content-center pour centrer la colonne -->
+        <div class="col-md-8 text-center">
+          <!-- Utilisation de text-center pour centrer le contenu dans la colonne -->
+          <video src="../videos/sgp.mp4" controls class="img-fluid" width="800">
+            Votre navigateur ne prend pas en charge la balise vidéo.
+          </video>
+        </div>
+      </div>
     </div>
-  </section>
-</main>
-  
-  
 
-</body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <main ng-controller="SGPController">
+      <section class="py-5">
+        <div class="container">
+          <h1 class="text-center">
+            SGP - Système de Gestion et de Suivi de Projet
+          </h1>
+          <p>
+            Le SGP (Système de Gestion et de Suivi de Projet) permet de garder
+            une trace sur les projets, ses tâches, les membres qui ont réalisé
+            la tâche, sa livraison et les commentaires liés à chaque tâche.
+          </p>
+          <p>
+            Le projet est réalisé en VB dot Net et la base de données sous
+            Microsoft Access. Il est programmé pour deux types d'utilisateurs :
+          </p>
+          <ul>
+            <li>L'administrateur qui peut gérer le projet.</li>
+            <li>
+              L'espace membre qui peut gérer les tâches qui lui ont été
+              affectées.
+            </li>
+          </ul>
+          <p></p>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </html>

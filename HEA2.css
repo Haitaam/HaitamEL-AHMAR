@@ -1,10 +1,12 @@
+/* Réinitialisation des marges, rembourrages et boîte de modèle de boîte */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: poppins-med;
+  font-family: poppins-med; /* Utilisation de la police Poppins Medium par défaut */
 }
 
+/* Définition des polices personnalisées */
 @font-face {
   font-family: poppins-med;
   src: url(Poppins/Poppins-Light.ttf);
@@ -14,6 +16,8 @@
   font-family: poppins-bold;
   src: url(Poppins/Poppins-Bold.ttf);
 }
+
+/* Animation du typewriter */
 #typewriter {
   display: inline-block;
   overflow: hidden;
@@ -24,6 +28,8 @@
   font-weight: bolder;
   font-size: larger;
 }
+
+/* Animation de l'écriture du typewriter */
 @keyframes typing {
   from {
     width: 0;
@@ -33,25 +39,27 @@
   }
 }
 
+/* Animation de clignotement du curseur du typewriter */
 @keyframes blink-caret {
   from,
   to {
     border-color: transparent;
   }
   50% {
-    border-color: #000000; /* Adjust the color as needed */
+    border-color: #000000;
   }
 }
 
+/* Style général du body */
 body {
-  background-image: url("images/cool-background.png");
+  background-image: url("images/cool-background.png"); /* Définition de l'image de fond */
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
 }
 
+/* Style de la section Showcase */
 .showcase {
-  /* Replace with your image path */
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -59,34 +67,41 @@ body {
   padding: 50px 0;
 }
 
+/* Style de l'élément img dans .navbar-brand */
 .navbar-brand img {
   transition: transform 0.3s;
 }
 
+/* Animation du hover de l'image dans .navbar-brand */
 .navbar-brand img:hover {
   transform: scale(1.5);
 }
 
+/* Style de l'icône du bouton de la barre de navigation */
 .navbar-toggler-icon {
   background-image: url(logos/1564512_burger_catalogue_list_menu_icon.png);
   transform: scale(1);
-
-  filter: invert(1);
+  filter: invert(1); /* Inversion des couleurs de l'icône */
 }
+
+/* Animation du hover de l'icône du bouton de la barre de navigation */
 .navbar-toggler-icon:hover {
   background-image: url(logos/1564512_burger_catalogue_list_menu_icon.png);
   transform: scale(1.2);
 }
+
+/* Style général du texte */
 .text {
   color: #000000;
-  text-shadow: #ffffff;
+  text-shadow: #ffffff; /* Ombre du texte */
   font-weight: bold;
   line-height: 1.6;
   align-items: center;
-  margin-top: 140px;
-  margin-left: 50px;
+  margin-top: 100px;
+  margin-left: 30px;
 }
 
+/* Style des titres */
 h1 {
   font-size: 50px;
 }
@@ -99,10 +114,14 @@ h3 {
 h4 {
   font-size: 25px;
 }
+
+/* Style des liens */
 a {
   color: #000000;
   font-weight: bold;
 }
+
+/* Style des liens dans la barre de navigation */
 .nav-link {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -114,6 +133,8 @@ a {
   transition: all 0.3s ease;
   transform: scale(1);
 }
+
+/* Animation du hover des liens dans la barre de navigation */
 .nav-link:hover {
   color: #ffffff;
   background-color: #000000;
@@ -122,9 +143,12 @@ a {
   transform: scale(1.1);
 }
 
+/* Style de l'image dans .navbar-brand */
 .navbar-brand img {
   filter: invert(1);
 }
+
+/* Style des boutons */
 .btn {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -138,6 +162,7 @@ a {
   transform: scale(1);
 }
 
+/* Animation du hover des boutons */
 .btn:hover {
   color: #fff;
   background-color: #000000;
@@ -145,29 +170,62 @@ a {
   cursor: pointer;
   transform: scale(1.2);
 }
+
+/* Style des cartes */
 .card {
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Ajustez les valeurs pour personnaliser l'ombre */
-  transition: 0.3s;
+  box-shadow: 0 6px 8px rgb(72, 0, 102); /* Ombre en violet foncé */
+  transition: box-shadow 0.3s; /* Animation de transition pour l'ombre */
   transform: scale(1);
-  opacity: 85%;
+  opacity: 1; /* 100% d'opacité pour rendre la carte visible */
 }
 
+/* Animation du hover des cartes */
 .card:hover {
-  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 16px rgb(52, 1, 46);
+  transition: box-shadow 0.3s;
   transform: scale(1.05);
   opacity: 1;
 }
+/* colorer chaque mot en hover dans la presentation */
+.hovered {
+  color: rgb(69, 2, 69);
+  font-weight: bolder;
+}
+
+/* Style des cartes postales sombres et rouges */
+.postcard.dark.red {
+  box-shadow: rgba(63, 20, 76, 0.4) -4px 4px, rgba(63, 20, 76, 0.3) -8px 8px,
+    rgba(63, 20, 76, 0.2) -9px 9px, rgba(63, 20, 76, 0.1) -12px 12px,
+    rgba(63, 20, 76, 0.05) -15px 15px; /* Ombre en violet foncé */
+  transition: box-shadow 0.3s; /* Animation de transition pour l'ombre */
+}
+
+/* Animation du hover des cartes postales sombres et rouges */
+.postcard.dark.red:hover {
+  box-shadow: rgba(63, 20, 76, 0.6) -4px 4px, rgba(63, 20, 76, 0.5) -8px 8px,
+    rgba(63, 20, 76, 0.4) -9px 9px, rgba(63, 20, 76, 0.3) -12px 12px,
+    rgba(63, 20, 76, 0.2) -15px 15px; /* Lorsque survolé, l'ombre s'étend légèrement */
+}
+
+/* Style du texte des cartes postales */
+.postcard__text {
+  opacity: 1; /* Rendre le texte visible */
+}
+
+/* Style du conteneur de contact */
 .ctt {
   display: flex;
   margin: 20px;
 }
 
+/* Style de la carte de contact */
 .contact-card {
   text-align: center;
   padding: 10px;
   width: 100px;
 }
 
+/* Style du lien de contact */
 .contact-link {
   text-decoration: none;
   display: block;
@@ -176,9 +234,12 @@ a {
   transform: scale(1);
 }
 
+/* Animation du hover de la carte de contact */
 .contact-card:hover {
   transform: scale(1.3);
 }
+
+/* Style de la section "à propos du développeur" */
 .about-dev {
   padding: 20px;
   margin-bottom: 20px;
@@ -189,6 +250,7 @@ a {
   align-items: center;
 }
 
+/* Style de la section "à propos" */
 .about-section {
   flex: 1;
   margin: 10px;
@@ -196,7 +258,9 @@ a {
   color: #000000;
 }
 
+/* Media query pour les appareils de petite taille */
 @media (max-width: 667px) {
+  /* Style de la section "à propos du développeur" pour les appareils de petite taille */
   .about-dev {
     width: 90%;
     padding: 20px;
@@ -209,34 +273,42 @@ a {
     align-items: center;
   }
 
+  /* Style de la section "à propos" pour les appareils de petite taille */
   .about-section {
     flex: 1;
     margin: 10px;
     text-align: center;
     color: #000000;
   }
+
+  /* Style des images pour les appareils de petite taille */
   img {
     max-width: 400px;
     object-fit: contain;
     border-radius: 10px;
   }
+
+  /* Animation du hover des images pour les appareils de petite taille */
   img:hover {
     object-fit: contain;
     border-radius: 10px;
     transform: scale(1.1);
   }
 
+  /* Style du conteneur de contact pour les appareils de petite taille */
   .ctt {
     display: flex;
     margin: 20px;
   }
 
+  /* Style de la carte de contact pour les appareils de petite taille */
   .contact-card {
     text-align: center;
     padding: 10px;
     width: 100px;
   }
 
+  /* Style du lien de contact pour les appareils de petite taille */
   .contact-link {
     text-decoration: none;
     display: block;
@@ -245,31 +317,42 @@ a {
     transform: scale(1);
   }
 
+  /* Style de la section Showcase pour les appareils de petite taille */
   .showcase {
     padding: 30px 0;
   }
+
+  /* Style du body pour les appareils de petite taille */
   body {
     background-image: url(images/cool-background.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
   }
+
+  /* Style du texte pour les appareils de petite taille */
   .text {
     color: #000000;
     margin-top: 50px;
   }
+
+  /* Style de l'image dans .navbar-brand pour les appareils de petite taille */
   .navbar-brand img {
     transition: transform 0.2s;
     transform: scale(1);
   }
 
+  /* Animation du hover de l'image dans .navbar-brand pour les appareils de petite taille */
   .navbar-brand img:hover {
     transform: scale(1.3);
   }
 
+  /* Opacité des liens de la barre de navigation pour les appareils de petite taille */
   .nav-link {
     opacity: 90%;
   }
+
+  /* Style des titres pour les appareils de petite taille */
   h1 {
     font-size: 30px;
   }
@@ -283,18 +366,23 @@ a {
     font-size: 18px;
   }
 }
+
+/* Style du thème sombre */
 .dark {
   background: rgba(218, 215, 227, 0.078);
 }
 
+/* Style du thème clair */
 .light {
   background: #f3f5f7;
 }
 
+/* Style des liens */
 a {
   color: #ffffff;
 }
 
+/* Animation du hover des liens */
 a:hover {
   text-decoration: none;
   color: whitesmoke;
@@ -302,12 +390,14 @@ a:hover {
   transform: scale(1.1);
 }
 
+/* Style des éléments de tag en survol */
 .tag__item:hover {
   cursor: pointer;
   text-decoration: underline;
   font-size: large;
 }
 
+/* Style du titre de la page */
 #pageHeaderTitle {
   margin: 2rem 0;
   text-transform: uppercase;
@@ -316,7 +406,7 @@ a:hover {
   color: #000000;
 }
 
-/* Cards */
+/* Style des cartes postales */
 .postcard {
   flex-wrap: wrap;
   display: flex;
@@ -328,22 +418,27 @@ a:hover {
   color: #ffffff;
 }
 
+/* Style des cartes postales sombres */
 .postcard.dark {
   background-color: #18151f;
 }
 
+/* Style des cartes postales claires */
 .postcard.light {
   background-color: #e1e5ea;
 }
 
+/* Style des cartes postales en thème sombre */
 .postcard.t-dark {
   color: #18151f;
 }
 
+/* Style des liens dans les cartes postales */
 .postcard a {
   color: inherit;
 }
 
+/* Style du titre principal dans les cartes postales */
 .postcard h1,
 .postcard .h1 {
   margin-bottom: 0.5rem;
@@ -351,15 +446,13 @@ a:hover {
   line-height: 1.2;
 }
 
-.postcard .small {
-  font-size: 80%;
-}
-
+/* Style du texte principal dans les cartes postales */
 .postcard__title {
   font-size: 1.75rem;
   color: #ffffff;
 }
 
+/* Style de l'image dans les cartes postales */
 .postcard__img {
   max-height: 180px;
   width: 100%;
@@ -367,10 +460,12 @@ a:hover {
   position: relative;
 }
 
+/* Style du lien de l'image dans les cartes postales */
 .postcard__img_link {
   display: contents;
 }
 
+/* Style de la barre de séparation dans les cartes postales */
 .postcard__bar {
   width: 50px;
   height: 10px;
@@ -380,6 +475,7 @@ a:hover {
   transition: width 0.2s ease;
 }
 
+/* Style du texte dans les cartes postales */
 .postcard__text {
   padding: 1.5rem;
   position: relative;
@@ -387,6 +483,7 @@ a:hover {
   flex-direction: column;
 }
 
+/* Style du texte de prévisualisation dans les cartes postales */
 .postcard__preview-txt {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -394,6 +491,7 @@ a:hover {
   height: 100%;
 }
 
+/* Style de la boîte à tags dans les cartes postales */
 .postcard__tagbox {
   display: flex;
   flex-flow: row wrap;
@@ -404,6 +502,7 @@ a:hover {
   text-decoration: none;
 }
 
+/* Style des éléments de tag dans la boîte à tags des cartes postales */
 .postcard__tagbox .tag__item {
   display: inline-block;
   background: rgba(83, 83, 83, 0.4);
@@ -415,10 +514,12 @@ a:hover {
   transition: background-color 0.3s;
 }
 
+/* Animation du hover des éléments de tag dans les cartes postales */
 .postcard__tagbox .tag__item:hover {
   background: rgba(83, 83, 83, 0.8);
 }
 
+/* Pseudo-élément pour créer un effet de survol sur les cartes postales */
 .postcard:before {
   content: "";
   position: absolute;
@@ -431,34 +532,42 @@ a:hover {
   border-radius: 10px;
 }
 
+/* Animation de la barre de séparation au survol des cartes postales */
 .postcard:hover .postcard__bar {
   width: 100px;
 }
 
+/* Media query pour les écrans de taille moyenne et supérieure */
 @media screen and (min-width: 769px) {
+  /* Ajustement du style des cartes postales */
   .postcard {
     flex-wrap: inherit;
   }
 
+  /* Ajustement du style du titre principal dans les cartes postales */
   .postcard__title {
     font-size: 2rem;
   }
 
+  /* Ajustement du style de la boîte à tags dans les cartes postales */
   .postcard__tagbox {
     justify-content: start;
   }
 
+  /* Ajustement du style de l'image dans les cartes postales */
   .postcard__img {
     max-width: 300px;
     max-height: 100%;
     transition: transform 0.3s ease;
   }
 
+  /* Ajustement du style du texte dans les cartes postales */
   .postcard__text {
     padding: 3rem;
     width: 100%;
   }
 
+  /* Pseudo-élément pour créer un effet visuel sur les cartes postales */
   .media.postcard__text:before {
     content: "";
     position: absolute;
@@ -469,10 +578,12 @@ a:hover {
     width: 55px;
   }
 
+  /* Animation du hover de l'image dans les cartes postales */
   .postcard:hover .postcard__img {
     transform: scale(1.1);
   }
 
+  /* Ajustement des positions des cartes postales */
   .postcard:nth-child(2n + 1) {
     flex-direction: row;
   }
@@ -492,11 +603,14 @@ a:hover {
   }
 }
 
+/* Media query pour les écrans de grande taille */
 @media screen and (min-width: 1024px) {
+  /* Ajustement du style du texte dans les cartes postales */
   .postcard__text {
     padding: 2rem 3.5rem;
   }
 
+  /* Pseudo-élément pour créer un effet visuel sur les cartes postales */
   .postcard__text:before {
     content: "";
     position: absolute;
@@ -506,12 +620,14 @@ a:hover {
     width: 55px;
   }
 
+  /* Style du thème sombre pour le pseudo-élément du texte dans les cartes postales */
   .postcard.dark {
     .postcard__text:before {
       background: #18151f;
     }
   }
 
+  /* Style du thème clair pour le pseudo-élément du texte dans les cartes postales */
   .postcard.light {
     .postcard__text:before {
       background: #e1e5ea;

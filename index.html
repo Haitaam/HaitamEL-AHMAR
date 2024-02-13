@@ -111,6 +111,7 @@
           <div class="about-section">
             <h2><strong>A PROPOS</strong></h2>
             <p
+              class="hoverable"
               style="
                 font-size: large;
                 font-family: Arial, Helvetica, sans-serif;
@@ -130,6 +131,7 @@
           <div class="about-section">
             <h2><strong id="pre">DÉVELOPPEUR INFORMATIQUE</strong></h2>
             <p
+              class="hoverable"
               style="
                 font-size: large;
                 font-family: Arial, Helvetica, sans-serif;
@@ -160,7 +162,7 @@
             <hr />
           </h1>
 
-          <article class="postcard dark blue">
+          <article class="postcard dark red">
             <a class="postcard__img_link" href="Pages/locamoto.html">
               <img
                 class="postcard__img"
@@ -533,6 +535,31 @@
         mesProjetsLink.addEventListener("click", function (event) {
           event.preventDefault();
           scrollToTarget();
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const paragraphs = document.querySelectorAll(".hoverable");
+
+        paragraphs.forEach(function (paragraph) {
+          const words = paragraph.innerText.split(" ");
+          paragraph.innerHTML = "";
+
+          words.forEach(function (word) {
+            const span = document.createElement("span");
+            span.innerText = word + " ";
+
+            span.addEventListener("mouseover", function () {
+              this.classList.add("hovered");
+            });
+
+            span.addEventListener("mouseout", function () {
+              this.classList.remove("hovered");
+            });
+
+            paragraph.appendChild(span);
+          });
         });
       });
     </script>

@@ -80,6 +80,21 @@
         </div>
       </section>
     </main>
+    <div class="loader">
+      <div data-glitch="Loading..." class="glitch">Loading...</div>
+    </div>
+  <script>
+    // Wait for the DOM content to be fully loaded
+    document.addEventListener("DOMContentLoaded", function () {
+      // Select the loader element
+      var loader = document.querySelector(".loader");
+
+      // Hide the loader once the page is fully loaded
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    });
+  </script>
   </body>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

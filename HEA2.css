@@ -136,11 +136,16 @@ a {
 
 /* Animation du hover des liens dans la barre de navigation */
 .nav-link:hover {
-  color: #ffffff;
-  background-color: #000000;
-  border-color: #ffffff;
-  cursor: pointer;
-  transform: scale(1.1);
+  background: linear-gradient(180deg, #3b2ad5 0%, #88007d 60%, #ff0055c4 100%);
+  box-shadow: 0px 2px 5px #03001e, inset 0px 2px 5px #8611d4,
+    inset 0 -2px 5px #ff0055a1;
+
+  background: #03001e;
+  box-shadow: 0px -4px 16px #9611d4, 0px 2px 5px #00a2ffe3,
+    inset 0px 4px 8px #3b2ad5;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 /* Style de l'image dans .navbar-brand */

@@ -12,9 +12,6 @@
     <link rel="shortcut icon" href="logos/H.png" type="image/x-icon" />
   </head>
   <body>
-    <div class="loader-wrapper">
-      <span class="loader"><span class="loader-inner"></span></span>
-    </div>
     <div class="container-fluid">
       <header class="showcase">
         <nav class="navbar navbar-expand-lg">
@@ -560,6 +557,21 @@
 
             paragraph.appendChild(span);
           });
+        });
+      });
+    </script>
+    <div class="loader">
+      <div data-glitch="Loading..." class="glitch">Loading...</div>
+    </div>
+    <script>
+      // Wait for the DOM content to be fully loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        // Select the loader element
+        var loader = document.querySelector(".loader");
+
+        // Hide the loader once the page is fully loaded
+        window.addEventListener("load", function () {
+          loader.style.display = "none";
         });
       });
     </script>

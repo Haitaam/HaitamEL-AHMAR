@@ -1,78 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/locamoto.css">
-  <link rel="shortcut icon" href="../logos/H.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-   
-  <title>Locamoto</title>
-</head>
-<body>
-  
-  
-  <div class="container-fluid">
-    <header class="showcase">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/locamoto.css" />
+    <link rel="shortcut icon" href="../logos/H.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <title>Locamoto</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="showcase">
         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#"><img src="../logos/HE.png" alt="" height="40px"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation " style="background-color: rgba(0, 0, 0, 0.254);">
-                <span class="navbar-toggler-icon " style="background-color: rgba(0, 0, 0, 0.488);"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Accueil</a>
-                    </li>
-                </ul>
-            </div>
+          <a class="navbar-brand" href="#"
+            ><img src="../logos/HE.png" alt="" height="40px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation "
+            style="background-color: rgba(0, 0, 0, 0.254)"
+          >
+            <span
+              class="navbar-toggler-icon"
+              style="background-color: rgba(0, 0, 0, 0.488)"
+            ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Accueil</a>
+              </li>
+            </ul>
+          </div>
         </nav>
-    </header>
-</div>
-
-<div class="container">
-  <div class="row justify-content-center"> <!-- Utilisation de justify-content-center pour centrer la colonne -->
-    <div class="col-md-8 text-center"> <!-- Utilisation de text-center pour centrer le contenu dans la colonne -->
-      <video src="../videos/lcm.mp4"   controls class="img-fluid" width="800">
-        Votre navigateur ne prend pas en charge la balise vidéo.
-      </video>
+      </header>
     </div>
-  </div>
-</div>
 
-
-
-<main ng-controller="HomeController">
-  <section class="py-5">
     <div class="container">
-      <h1 class="text-center">LOCAMOTO Version 1.0</h1>
-      <p>Locamoto est un service de location de motos qui vous permet de profiter de la liberté de la conduite
-        motocycliste sans avoir à posséder votre propre moto. Que vous ayez besoin d'une moto pour une balade en ville,
-        une escapade à la campagne ou une aventure sur la route, Locamoto vous offre une solution pratique et
-        abordable.</p>
-      <p>Les avantages de Locamoto sont nombreux :</p>
-      <ol>
-        <li>Large choix de motos : Locamoto propose une gamme variée de motos adaptées à tous les types de conducteurs
-          et de préférences.</li>
-        <li>Flexibilité de location : Vous pouvez choisir la durée de location qui vous convient, que ce soit pour une
-          journée, une semaine ou plus.</li>
-        <li>Tarifs compétitifs : Les tarifs de location de Locamoto sont compétitifs et transparents, sans frais cachés.
-        </li>
-        <li>Réservation en ligne : Vous pouvez facilement réserver votre moto préférée en ligne, en quelques clics.</li>
-        <li>Assurance incluse : Toutes les locations de motos chez Locamoto incluent une assurance pour vous offrir une
-          tranquillité d'esprit.</li>
-      </ol>
-      <p>Que vous soyez un passionné de motos ou un conducteur occasionnel, Locamoto vous offre une solution de
-        location de motos pratique et abordable, vous permettant de profiter de la conduite sans les tracas de la
-        possession d'une moto.</p>
-
-      
+      <div class="row justify-content-center">
+        <!-- Utilisation de justify-content-center pour centrer la colonne -->
+        <div class="col-md-8 text-center">
+          <!-- Utilisation de text-center pour centrer le contenu dans la colonne -->
+          <video src="../videos/lcm.mp4" controls class="img-fluid" width="800">
+            Votre navigateur ne prend pas en charge la balise vidéo.
+          </video>
+        </div>
+      </div>
     </div>
-    </section>
-</main>
-  
 
-</body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <main ng-controller="HomeController">
+      <section class="py-5">
+        <div class="container">
+          <h1 class="text-center">LOCAMOTO Version 1.0</h1>
+          <p>
+            Locamoto est un service de location de motos qui vous permet de
+            profiter de la liberté de la conduite motocycliste sans avoir à
+            posséder votre propre moto. Que vous ayez besoin d'une moto pour une
+            balade en ville, une escapade à la campagne ou une aventure sur la
+            route, Locamoto vous offre une solution pratique et abordable.
+          </p>
+          <p>Les avantages de Locamoto sont nombreux :</p>
+          <ol>
+            <li>
+              Large choix de motos : Locamoto propose une gamme variée de motos
+              adaptées à tous les types de conducteurs et de préférences.
+            </li>
+            <li>
+              Flexibilité de location : Vous pouvez choisir la durée de location
+              qui vous convient, que ce soit pour une journée, une semaine ou
+              plus.
+            </li>
+            <li>
+              Tarifs compétitifs : Les tarifs de location de Locamoto sont
+              compétitifs et transparents, sans frais cachés.
+            </li>
+            <li>
+              Réservation en ligne : Vous pouvez facilement réserver votre moto
+              préférée en ligne, en quelques clics.
+            </li>
+            <li>
+              Assurance incluse : Toutes les locations de motos chez Locamoto
+              incluent une assurance pour vous offrir une tranquillité d'esprit.
+            </li>
+          </ol>
+          <p>
+            Que vous soyez un passionné de motos ou un conducteur occasionnel,
+            Locamoto vous offre une solution de location de motos pratique et
+            abordable, vous permettant de profiter de la conduite sans les
+            tracas de la possession d'une moto.
+          </p>
+        </div>
+      </section>
+    </main>
+    <div class="loader">
+      <div data-glitch="Loading..." class="glitch">Loading...</div>
+    </div>
+  </body>
+  <script>
+    // Wait for the DOM content to be fully loaded
+    document.addEventListener("DOMContentLoaded", function () {
+      // Select the loader element
+      var loader = document.querySelector(".loader");
+
+      // Show the loader initially
+      loader.style.display = "block";
+
+      // Hide the loader once the page is fully loaded
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </html>

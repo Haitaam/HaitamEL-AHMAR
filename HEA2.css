@@ -251,7 +251,7 @@ a {
   height: 2rem;
   background-size: 300% 300%;
   backdrop-filter: blur(1rem);
-  border-radius: 1rem;
+  border-radius: rem;
   transition: 0.3s;
   animation: gradient_301 5s ease infinite;
   border: double 4px transparent;

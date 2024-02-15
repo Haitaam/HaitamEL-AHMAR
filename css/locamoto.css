@@ -95,10 +95,7 @@ p {
 .img-fluid {
   border-radius: 5px;
 }
-a {
-  color: #000000;
-  font-weight: bold;
-}
+
 .nav-link {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -107,7 +104,6 @@ a {
   color: #ffffff;
   transition: all 0.3s ease;
   transform: scale(1);
-  filter: invert(1);
 }
 .nav-link:hover {
   color: #000000;
@@ -280,5 +276,20 @@ a {
 
   h4 {
     font-size: 18px;
+  }
+  .btn-back {
+    height: 3em;
+    width: 70px;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

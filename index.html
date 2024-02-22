@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Haitam EL Ahmar</title>
+    <title>Haitam EL AHMAR</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -108,13 +110,13 @@
       </div>
     </div>
     <!---->
-    <br />
-    <br />
-    <br />
-    <br />
+
+    <hr style="width: 35%" />
+    <hr style="width: 35%" />
+    <br /><br />
     <div>
       <center>
-        <div class="about-dev">
+        <div class="about-dev fade-in-scroll">
           <div class="about-section">
             <h2><strong>A PROPOS</strong></h2>
             <p
@@ -159,17 +161,15 @@
       </center>
     </div>
     <hr />
-
-    <hr />
     <div id="mes-traveaux">
       <section class="dark">
         <div class="container py-4">
-          <h1 class="h1 text-center" id="pageHeaderTitle">
+          <h1 class="h1-text-center fade-in-scroll" id="pageHeaderTitle">
             <strong>PROJETS RÉALISÉS</strong>
             <hr />
           </h1>
 
-          <article class="postcard dark red">
+          <article article class="postcard dark red fade-in-scroll">
             <a class="postcard__img_link" href="Pages/locamoto.html">
               <img
                 class="postcard__img"
@@ -202,7 +202,7 @@
             </div>
           </article>
 
-          <article class="postcard dark red">
+          <article article class="postcard dark red">
             <a class="postcard__img_link" href="Pages/Pn.html">
               <img
                 class="postcard__img"
@@ -236,7 +236,7 @@
             </div>
           </article>
 
-          <article class="postcard dark red">
+          <article article class="postcard dark red">
             <a class="postcard__img_link" href="Pages/spc.html">
               <img
                 class="postcard__img"
@@ -270,7 +270,7 @@
             </div>
           </article>
 
-          <article class="postcard dark red">
+          <article article class="postcard dark red">
             <a class="postcard__img_link" href="Pages/s1p.html">
               <img
                 class="postcard__img"
@@ -306,7 +306,7 @@
             </div>
           </article>
 
-          <article class="postcard dark red">
+          <article article class="postcard dark red">
             <a class="postcard__img_link" href="Pages/sgp.html">
               <img
                 class="postcard__img"
@@ -339,7 +339,7 @@
             </div>
           </article>
 
-          <article class="postcard dark red">
+          <article article class="postcard dark red">
             <a class="postcard__img_link" href="Pages/Password_manager.html">
               <img
                 class="postcard__img"
@@ -374,7 +374,7 @@
             </div>
           </article>
 
-          <article class="postcard dark red">
+          <article article class="postcard dark red">
             <a class="postcard__img_link" href="Pages/Archima.html">
               <img
                 class="postcard__img"
@@ -407,7 +407,7 @@
             </div>
           </article>
 
-          <article class="postcard dark red">
+          <article article class="postcard dark red">
             <a class="postcard__img_link" href="">
               <img
                 class="postcard__img"
@@ -436,7 +436,7 @@
             </div>
           </article>
 
-          <article class="postcard dark red">
+          <article article class="postcard dark red">
             <a class="postcard__img_link" href="">
               <img
                 class="postcard__img"
@@ -470,106 +470,6 @@
         </div>
       </section>
     </div>
-
-    <script>
-      const text = [
-        "Web Developer",
-        "Front-end Developer",
-        "Back-end Developer",
-        "Full Stack Developer",
-      ];
-      let index = 0;
-      let letterIndex = 0;
-      let typingInterval = setInterval(type, 100);
-
-      function type() {
-        const span = document.getElementById("typewriter");
-        const currentText = text[index];
-        span.textContent += currentText[letterIndex];
-        letterIndex++;
-        if (letterIndex === currentText.length) {
-          index++;
-          if (index === text.length) {
-            index = 0;
-          }
-          clearInterval(typingInterval);
-          setTimeout(() => {
-            span.textContent = "";
-            letterIndex = 0;
-            typingInterval = setInterval(type, 100);
-          }, 2000);
-        }
-      }
-
-      $(window).on("load", function () {
-        $(".loader-wrapper").fadeOut("slow");
-      });
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Function to scroll to the target section
-        function scrollToTarget() {
-          const targetSection = document.getElementById("mes-traveaux");
-          targetSection.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-            inline: "start",
-            duration: 3000,
-          });
-        }
-
-        const mesProjetsLink = document.getElementById("mes-projets-link");
-        mesProjetsLink.addEventListener("click", function (event) {
-          event.preventDefault();
-          scrollToTarget();
-        });
-      });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        // Function to scroll to the target section
-        function scrollToTarget() {
-          const targetSection = document.getElementById("pre");
-          targetSection.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-            inline: "start",
-            duration: 3000,
-          });
-        }
-
-        const mesProjetsLink = document.getElementById("Presentation-link");
-        mesProjetsLink.addEventListener("click", function (event) {
-          event.preventDefault();
-          scrollToTarget();
-        });
-      });
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const paragraphs = document.querySelectorAll(".hoverable");
-
-        paragraphs.forEach(function (paragraph) {
-          const words = paragraph.innerText.split(" ");
-          paragraph.innerHTML = "";
-
-          words.forEach(function (word) {
-            const span = document.createElement("span");
-            span.innerText = word + " ";
-
-            span.addEventListener("mouseover", function () {
-              this.classList.add("hovered");
-            });
-
-            span.addEventListener("mouseout", function () {
-              this.classList.remove("hovered");
-            });
-
-            paragraph.appendChild(span);
-          });
-        });
-      });
-    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

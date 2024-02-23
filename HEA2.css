@@ -166,6 +166,23 @@
   cursor: pointer;
   border-radius: 6px;
 }
+@media only screen and (max-width: 767px) {
+  /* Réduire la taille de la police pour s'adapter aux petits écrans */
+  .form-container {
+    padding: 20px;
+    width: 100%; /* Ajoute un peu d'espace autour du formulaire */
+  }
+
+  /* Réduire la taille de la police pour s'adapter aux petits écrans */
+  .form-container .form-group label {
+    font-size: 14px;
+  }
+
+  /* Réduire la hauteur du champ de texte pour s'adapter à l'écran */
+  .form-container .form-group textarea {
+    height: 80px; /* Ajustez la hauteur selon vos besoins */
+  }
+}
 
 .form-container .form-submit-btn:hover {
   background-color: #fff;
@@ -175,7 +192,6 @@
   padding: 20px 0;
   background-image: url(/images/cool-background.png);
   color: #000000;
-  
 }
 
 @media (max-width: 767px) {

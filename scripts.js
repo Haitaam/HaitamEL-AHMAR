@@ -183,4 +183,26 @@ $(document).ready(function () {
   });
 });
 
-//8
+//8$(document).ready(function () {
+var lastScrollTop = 0;
+$(window).scroll(function () {
+  var scrollHeight = $(this).scrollTop();
+  var elementOffset = $(".form-container").offset().top;
+  var elementHeight = $(".form-container").outerHeight();
+  var windowHeight = $(window).height();
+  var documentHeight = $(document).height();
+
+  // Check scroll direction
+  var scrollDirection = scrollHeight > lastScrollTop ? "down" : "up";
+  lastScrollTop = scrollHeight;
+
+  // Calculate the bottom position of the ".form-container" element
+  var elementBottom = elementOffset + elementHeight;
+
+  // Add the "show" class when the bottom of the ".form-container" element reaches the bottom of the window
+  if (elementBottom <= scrollHeight + windowHeight) {
+    $(".form-container").addClass("show");
+  } else {
+    $(".form-container").removeClass("show");
+  }
+});

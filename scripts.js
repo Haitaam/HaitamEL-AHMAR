@@ -144,12 +144,17 @@ $(document).ready(function () {
 });
 //7
 $(document).ready(function () {
+  var lastScrollTop = 0;
   $(window).scroll(function () {
     var scrollHeight = $(this).scrollTop();
     var elementOffset = $(".postcard.dark.red").offset().top;
     var elementHeight = $(".postcard.dark.red").outerHeight();
     var windowHeight = $(window).height();
     var documentHeight = $(document).height();
+
+    // Check scroll direction
+    var scrollDirection = scrollHeight > lastScrollTop ? "down" : "up";
+    lastScrollTop = scrollHeight;
 
     // Calcule la position du bas de l'élément ".postcard.dark.red"
     var elementBottom = elementOffset + elementHeight;
@@ -168,6 +173,14 @@ $(document).ready(function () {
       // Supprimer la classe d'animation si l'élément n'est pas visible
       $(".postcard.dark.red").removeClass("other-animation");
     }
+
+    // Add class for scroll direction
+    if (scrollDirection === "down") {
+      $(".postcard.dark.red").addClass("move-up");
+    } else {
+      $(".postcard.dark.red").removeClass("move-up");
+    }
   });
 });
+
 //8

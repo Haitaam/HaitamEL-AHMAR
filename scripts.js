@@ -99,7 +99,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Script 5
 
-
 //script 6
 $(document).ready(function () {
   $(window).scroll(function () {

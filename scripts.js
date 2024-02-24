@@ -99,13 +99,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Script 5
 $(document).ready(function () {
-  // Vérifie si l'utilisateur utilise un PC
-  var isPC =
-    navigator.userAgent.indexOf("Windows") != -1 ||
-    navigator.userAgent.indexOf("Macintosh") != -1;
+  // Vérifie si l'utilisateur accède à la page depuis un appareil mobile
+  var isMobile =
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
 
-  // Si c'est un PC, exécute le code
-  if (isPC) {
+  // Si ce n'est pas un appareil mobile, exécute le code
+  if (!isMobile) {
     $(window).scroll(function () {
       var scrollHeight = $(this).scrollTop();
       var elementOffset = $(".about-dev").offset().top;

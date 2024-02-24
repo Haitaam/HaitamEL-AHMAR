@@ -367,17 +367,6 @@ a {
   cursor: pointer;
   transform: scale(1.2);
 }
-.fade-in.visible {
-  opacity: 1;
-}
-.fade-in-scroll {
-  opacity: 0;
-  transition: opacity 1.5s ease;
-}
-
-.fade-in-scroll.fade-in {
-  opacity: 1;
-}
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);

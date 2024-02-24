@@ -99,21 +99,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Script 5
 $(document).ready(function () {
-  $(window).scroll(function () {
-    var scrollHeight = $(this).scrollTop();
-    var elementOffset = $(".about-dev").offset().top;
-    var elementHeight = $(".about-dev").outerHeight();
-    var windowHeight = $(window).height();
-    var documentHeight = $(document).height();
+  // Vérifie si l'utilisateur utilise un PC
+  var isPC =
+    navigator.userAgent.indexOf("Windows") != -1 ||
+    navigator.userAgent.indexOf("Macintosh") != -1;
 
-    // Calcule la position du bas de l'élément ".about-dev"
-    var elementBottom = elementOffset + elementHeight;
+  // Si c'est un PC, exécute le code
+  if (isPC) {
+    $(window).scroll(function () {
+      var scrollHeight = $(this).scrollTop();
+      var elementOffset = $(".about-dev").offset().top;
+      var elementHeight = $(".about-dev").outerHeight();
+      var windowHeight = $(window).height();
+      var documentHeight = $(document).height();
 
-    // Ajoute la classe "fade-in" lorsque le bas de l'élément ".about-dev" atteint le bas de la fenêtre
-    if (elementBottom <= scrollHeight + windowHeight) {
-      $(".about-dev").addClass("fade-in");
-    }
-  });
+      // Calcule la position du bas de l'élément ".about-dev"
+      var elementBottom = elementOffset + elementHeight;
+
+      // Ajoute la classe "fade-in" lorsque le bas de l'élément ".about-dev" atteint le bas de la fenêtre
+      if (elementBottom <= scrollHeight + windowHeight) {
+        $(".about-dev").addClass("fade-in");
+      }
+    });
+  }
 });
 
 //script 6

@@ -98,23 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Script 5
-$(document).ready(function () {
-  $(window).scroll(function () {
-    var scrollHeight = $(this).scrollTop();
-    var elementOffset = $(".about-dev").offset().top;
-    var elementHeight = $(".about-dev").outerHeight();
-    var windowHeight = $(window).height();
-    var documentHeight = $(document).height();
 
-    // Calcule la position du bas de l'élément ".about-dev"
-    var elementBottom = elementOffset + elementHeight;
-
-    // Ajoute la classe "fade-in" lorsque le bas de l'élément ".about-dev" atteint le bas de la fenêtre
-    if (elementBottom <= scrollHeight + windowHeight) {
-      $(".about-dev").addClass("fade-in");
-    }
-  });
-});
 
 //script 6
 $(document).ready(function () {

@@ -505,6 +505,37 @@
       </footer>
     </div>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Fonction pour vérifier si l'utilisateur est sur un appareil mobile
+        function isMobileDevice() {
+          return (
+            typeof window.orientation !== "undefined" ||
+            navigator.userAgent.indexOf("IEMobile") !== -1
+          );
+        }
+
+        // Si l'utilisateur est sur un ordinateur, exécute l'animation
+        if (!isMobileDevice()) {
+          $(window).scroll(function () {
+            var scrollHeight = $(this).scrollTop();
+            var elementOffset = $(".about-dev").offset().top;
+            var elementHeight = $(".about-dev").outerHeight();
+            var windowHeight = $(window).height();
+            var documentHeight = $(document).height();
+
+            // Calcule la position du bas de l'élément ".about-dev"
+            var elementBottom = elementOffset + elementHeight;
+
+            // Ajoute la classe "fade-in" lorsque le bas de l'élément ".about-dev" atteint le bas de la fenêtre
+            if (elementBottom <= scrollHeight + windowHeight) {
+              $(".about-dev").addClass("fade-in");
+            }
+          });
+        }
+      });
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

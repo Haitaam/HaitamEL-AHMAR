@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PressNetwork — Haitam El Ahmar</title>
+  <meta name="description" content="Real-time news platform delivering live updates with a user-friendly reading experience.">
+  <meta name="theme-color" content="#000000">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23000'/%3E%3Ctext x='50' y='68' font-family='Inter,sans-serif' font-size='48' font-weight='800' fill='%23a855f7' text-anchor='middle'%3EHA%3C/text%3E%3C/svg%3E">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: { accent: { DEFAULT: '#a855f7', light: '#c084fc', dark: '#7c3aed' } },
+        },
+      },
+    }
+  </script>
+
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="antialiased">
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-ring"></div>
+      <div class="preloader-glow"></div>
+      <span class="preloader-logo">HA</span>
+    </div>
+  </div>
+
+  <div class="bg-gradient-glow" aria-hidden="true"></div>
+  <div class="bg-gradient-glow-2" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 glass-nav" role="navigation">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="../index.html" class="flex items-center gap-2 group" aria-label="Home">
+          <span class="text-xl font-extrabold tracking-tight text-white transition-colors duration-300 group-hover:text-[#a855f7]">HA</span>
+        </a>
+        <a href="../index.html#projects" class="back-link">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+          </svg>
+          Back to Projects
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="project-hero bg-grid pt-16">
+    <div class="project-hero-bg" style="background: linear-gradient(135deg, rgba(20,10,30,0.9) 0%, rgba(40,20,60,0.7) 50%, rgba(25,15,35,0.9) 100%);"></div>
+    <div class="project-hero-content max-w-4xl mx-auto px-6">
+      <div class="reveal active">
+        <span class="text-xs font-semibold text-[#a855f7] uppercase tracking-widest">Project · 2024</span>
+        <h1 class="hero-title text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mt-4 mb-4">
+          PressNetwork
+        </h1>
+        <p class="text-lg md:text-xl text-zinc-400 font-light max-w-2xl mx-auto">
+          A real-time news platform delivering live updates to readers
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="py-20 md:py-28 relative">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="reveal">
+        <h2 class="section-title text-2xl md:text-3xl font-bold tracking-tight mb-4">Overview</h2>
+        <div class="section-divider mb-8"></div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <div class="glass rounded-2xl p-8 md:p-10">
+          <p class="text-zinc-300 leading-relaxed text-base md:text-lg mb-6">
+            PressNetwork is a dynamic news platform that delivers real-time updates across multiple categories. Designed with a clean, reader-focused interface, it provides an engaging experience for users to stay informed with the latest headlines, breaking news, and curated content.
+          </p>
+          <p class="text-zinc-400 leading-relaxed text-base md:text-lg">
+            Built with <span class="text-[#c084fc]">HTML5</span>, <span class="text-[#c084fc]">CSS3</span>, and <span class="text-[#c084fc]">JavaScript</span>, with a <span class="text-[#c084fc]">Bootstrap</span> frontend framework, PressNetwork features a responsive layout, category-based filtering, search functionality, and an intuitive reading experience optimized for both desktop and mobile devices.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Demo Video -->
+  <section class="py-20 md:py-28 relative video-section">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="reveal">
+        <h2 class="section-title text-2xl md:text-3xl font-bold tracking-tight mb-4">Project Demo Video</h2>
+        <div class="section-divider mb-8"></div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <video controls preload="metadata" playsinline>
+          <source src="../videos/Pressnet.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-20 md:py-28 relative">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="reveal">
+        <h2 class="section-title text-2xl md:text-3xl font-bold tracking-tight mb-4">Key Features</h2>
+        <div class="section-divider mb-8"></div>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="reveal reveal-delay-1 feature-card">
+          <div class="icon-wrap">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/>
+            </svg>
+          </div>
+          <h4>Live News Feed</h4>
+          <p>Real-time updates with breaking news alerts and continuously refreshed content across categories.</p>
+        </div>
+        <div class="reveal reveal-delay-2 feature-card">
+          <div class="icon-wrap">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+            </svg>
+          </div>
+          <h4>Rich Articles</h4>
+          <p>Full-featured article pages with images, videos, tags, author profiles, and related stories.</p>
+        </div>
+        <div class="reveal reveal-delay-3 feature-card">
+          <div class="icon-wrap">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+          </div>
+          <h4>Search & Discovery</h4>
+          <p>Powerful search engine with category filters, date ranges, and keyword-based article discovery.</p>
+        </div>
+        <div class="reveal reveal-delay-4 feature-card">
+          <div class="icon-wrap">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <h4>Responsive Design</h4>
+          <p>Mobile-first responsive layout ensuring a seamless reading experience across all devices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="py-20 md:py-28 relative">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="reveal">
+        <h2 class="section-title text-2xl md:text-3xl font-bold tracking-tight mb-4">Tech Stack</h2>
+        <div class="section-divider mb-8"></div>
+      </div>
+      <div class="reveal reveal-delay-1 flex flex-wrap justify-center gap-3">
+        <span class="skill-badge">HTML5</span>
+        <span class="skill-badge">CSS3</span>
+        <span class="skill-badge">JavaScript</span>
+        <span class="skill-badge">Bootstrap</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Links -->
+  <section class="py-20 md:py-28 relative">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <div class="reveal">
+        <h2 class="section-title text-2xl md:text-3xl font-bold tracking-tight mb-4">Links</h2>
+        <div class="section-divider mb-8"></div>
+      </div>
+      <div class="reveal reveal-delay-1 flex flex-wrap items-center justify-center gap-4">
+        <a href="https://github.com/Haitaam" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View Source Code
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 py-10">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-2">
+          <span class="text-lg font-extrabold tracking-tight text-white">HA</span>
+          <span class="text-zinc-600 text-sm">© 2026 Haitam El Ahmar</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="mailto:haitamelahmar@gmail.com" class="text-zinc-500 hover:text-[#a855f7] transition-colors" aria-label="Email">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/212600092985" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-[#a855f7] transition-colors" aria-label="WhatsApp">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="https://github.com/Haitaam" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-[#a855f7] transition-colors" aria-label="GitHub">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+        </div>
+        <a href="../index.html#projects" class="back-link">← All Projects</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../i18n.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

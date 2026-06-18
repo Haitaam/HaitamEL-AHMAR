@@ -1,463 +1,721 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Haitam EL AHMAR</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="scripts.js"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="HEA2.css"/>
-        <link rel="shortcut icon" href="logos/H.png" type="image/x-icon"/>
-    </head>
-    <body>
-        <div class="container-fluid">
-            <header class="showcase">
-                <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="#"><img src="logos/HE.png" alt="" height="40px"/></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="filter: invert(1)">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-auto">
-                            <a href="#" id="Presentation-link" class="btn">
-                                <strong>PRÉSENTATION</strong>
-                            </a>
-                            <a href="#" id="mes-projets-link" class="btn">
-                                <strong>MES PROJETS</strong>
-                            </a>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haitam El Ahmar | Full-Stack Developer</title>
+  <meta name="description" content="Full-Stack Developer crafting modern web applications with Laravel, Node.js, and AI integration.">
+  <meta name="theme-color" content="#000000">
+
+  <meta property="og:title" content="Haitam El Ahmar | Full-Stack Developer">
+  <meta property="og:description" content="Full-Stack Developer crafting modern web applications with Laravel, Node.js, and AI integration.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Haitam El Ahmar | Full-Stack Developer">
+  <meta name="twitter:description" content="Full-Stack Developer crafting modern web applications with Laravel, Node.js, and AI integration.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Haitam El Ahmar",
+    "url": "https://haitamelahmar.netlify.app",
+    "jobTitle": "Full-Stack Developer",
+    "sameAs": ["https://github.com/Haitaam"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23000'/%3E%3Ctext x='50' y='68' font-family='Inter,sans-serif' font-size='48' font-weight='800' fill='%23a855f7' text-anchor='middle'%3EHA%3C/text%3E%3C/svg%3E">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: { accent: { DEFAULT: '#a855f7', light: '#c084fc', dark: '#7c3aed' } },
+          animation: {
+            'fade-in': 'fadeIn 0.6s ease-out forwards',
+            'slide-up': 'slideUp 0.6s ease-out forwards',
+          },
+          keyframes: {
+            fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+            slideUp: { '0%': { opacity: '0', transform: 'translateY(30px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+          },
+        },
+      },
+    }
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="antialiased">
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-ring"></div>
+      <div class="preloader-glow"></div>
+      <span class="preloader-logo">HA</span>
+    </div>
+  </div>
+
+  <!-- Ambient Glows -->
+  <div class="bg-gradient-glow" aria-hidden="true"></div>
+  <div class="bg-gradient-glow-2" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" role="navigation" aria-label="Main navigation">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="flex items-center gap-2 group" aria-label="Home">
+          <span class="text-xl font-extrabold tracking-tight text-white transition-colors duration-300 group-hover:text-[#a855f7]">HA</span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+          <a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a>
+          <a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a>
+          <a href="#education" class="nav-link" data-i18n="nav.education">Education</a>
+          <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
         </div>
-        <div class="text">
-            <h1>
-                <strong>Haitam EL AHMAR</strong>
-            </h1>
-            <h3>
-                <strong>Chef de Projet Informatique</strong>
-            </h3>
-            <h4>
-                <strong>
-                    <span id="typewriter"></span>
-                </strong>
-            </h4>
+
+        <div class="hidden md:flex items-center gap-1 ml-4">
+          <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+          <button class="lang-btn" data-lang="fr" aria-label="Fran\u00e7ais">FR</button>
+          <button class="lang-btn" data-lang="es" aria-label="Espa\u00f1ol">ES</button>
         </div>
-        <!---->
-        <div class="ctt">
-            <div class="contact-card">
-                <a href="mailto:haitamelahmar1@gmail.com">
-                    <img src="logos/4691507_gmail_icon.png" alt="" srcset="" height="35px"/></a>
-            </div>
 
-            <div class="contact-card">
-                <a href="https://api.whatsapp.com/send?phone=0600092985" target="_blank">
-                    <img src="logos/whatsapp.png" alt="" srcset="" height="40px"/></a>
-            </div>
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-white/5 transition-colors" aria-label="Toggle menu" aria-expanded="false">
+          <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
 
-            <div class="contact-card">
-                <a href="https://github.com/Haitaam" target="_blank">
-                    <img src="logos/github.png" alt="" srcset="" height="40px"/></a>
-            </div>
+    <div id="mobile-menu" class="md:hidden hidden border-t border-white/5 glass-nav">
+      <div class="px-6 py-4 space-y-1">
+        <a href="#about" class="mobile-nav-link" data-mobile data-i18n="nav.about">About</a>
+        <a href="#skills" class="mobile-nav-link" data-mobile data-i18n="nav.skills">Skills</a>
+        <a href="#projects" class="mobile-nav-link" data-mobile data-i18n="nav.projects">Projects</a>
+        <a href="#education" class="mobile-nav-link" data-mobile data-i18n="nav.education">Education</a>
+        <a href="#contact" class="mobile-nav-link" data-mobile data-i18n="nav.contact">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-            <div class="contact-card">
-                <a href="https://www.linkedin.com/in/haitam-el-ahmar-536b4b280/" target="_blank">
-                    <img src="logos/linkedin.png" alt="" srcset="" height="40px"/></a>
-            </div>
+  <!-- Hero -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center bg-grid pt-16">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <div class="reveal active">
+        <p class="text-sm font-medium text-[#a855f7] tracking-widest uppercase mb-6 neon-text" data-i18n="hero.subtitle">
+          Full-Stack Developer
+        </p>
+      </div>
 
-            <div class="contact-card">
-                <a href="EL AHMAR HAITAM.pdf" target="_blank">
-                    <img src="logos/cv.png" alt="" srcset="" height="40px"/></a>
-            </div>
+      <h1 class="hero-title text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-none mb-6 reveal active">
+        <span class="text-white">Haitam</span>
+        <br>
+        <span class="text-white">El Ahmar</span>
+      </h1>
+
+      <div class="h-12 mb-8 reveal active reveal-delay-1">
+          <span class="text-xl md:text-2xl text-zinc-400 font-light">
+                          <span data-i18n="hero.typing-prefix">I build </span>
+                          <span id="typing-text" class="text-[#a855f7] font-medium"></span>
+                          <span class="typing-cursor"></span>
+        </span>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-4 reveal active reveal-delay-2">
+        <a href="#projects" class="btn-primary">
+          <span data-i18n="hero.view-projects">View Projects</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+          </svg>
+        </a>
+        <a href="#contact" class="btn-outline">
+          <span data-i18n="hero.get-in-touch">Get In Touch</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+        </a>
+        <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-outline">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+          </svg>
+          <span data-i18n="hero.resume">Resume</span>
+        </a>
+      </div>
+
+      <div class="mt-16 reveal active reveal-delay-3">
+        <div class="flex items-center justify-center gap-8 text-zinc-600">
+          <a href="https://wa.me/212600092985" target="_blank" rel="noopener noreferrer" class="hover:text-[#a855f7] transition-colors" aria-label="WhatsApp">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="mailto:haitamelahmar@gmail.com" class="hover:text-[#a855f7] transition-colors" aria-label="Email">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </a>
+          <a href="https://github.com/Haitaam" target="_blank" rel="noopener noreferrer" class="hover:text-[#a855f7] transition-colors" aria-label="GitHub">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
         </div>
-        <!---->
+      </div>
 
-        <hr style="width: 35%"/>
-        <hr style="width: 35%"/>
-        <br/><br/>
-        <div>
-            <center id="pre">
-                <div class="about-dev fade-in-scroll">
-                    <div class="about-section">
-                        <h2>
-                            <strong>A PROPOS</strong>
-                        </h2>
-                        <p class="hoverable" style="
-                                                                                font-size: large;
-                                                                                font-family: Arial, Helvetica, sans-serif;
-                                                                                text-align: justify;
-                                                                              ">
-                            Je me passionne pour la technologie, je suis un expert en gestion
-                                                                      du temps et je suis constamment à la recherche de nouveaux défis.
-                                                                      L'envie d'explorer l'inconnu et de progresser est ce qui me
-                                                                      motive, que ce soit dans le domaine numérique ou dans d'autres
-                                                                      domaines.
-                        </p>
-                    </div>
-                    <div class="about-section">
-                        <h2>
-                            <strong id="mes-traveaux">DÉVELOPPEUR INFORMATIQUE</strong>
-                        </h2>
-                        <p class="hoverable" style="
-                                                                                font-size: large;
-                                                                                font-family: Arial, Helvetica, sans-serif;
-                                                                                text-align: justify;
-                                                                              ">
-                            Grâce à mon expérience variée, je propose des solutions de
-                                                                      développement web personnalisées en proposant des tarifs uniques
-                                                                      en fonction des besoins et du budget des clients. Mon objectif est
-                                                                      de fournir des services de haute qualité et personnalisés.
-                        </p>
-                    </div>
+      <div class="mt-20 reveal active reveal-delay-4">
+        <a href="#about" class="inline-flex flex-col items-center gap-2 text-zinc-600 hover:text-zinc-400 transition-colors" aria-label="Scroll down">
+          <span class="text-xs tracking-widest uppercase" data-i18n="hero.scroll">Scroll</span>
+          <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-24 md:py-32 relative">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="reveal">
+        <h2 class="section-title text-3xl md:text-4xl font-bold tracking-tight mb-4" data-i18n-html="about.title">
+          About <span class="text-[#a855f7]">Me</span>
+        </h2>
+        <div class="section-divider mb-10"></div>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <div class="glass rounded-2xl p-8 md:p-10">
+          <p class="text-zinc-300 leading-relaxed text-base md:text-lg" data-i18n-html="about.p1">
+            I'm a passionate Full-Stack Developer with a deep love for crafting modern, performant web applications.
+            From elegant frontends with <span class="text-[#c084fc]">React</span> and
+            <span class="text-[#c084fc]">Vue</span> to robust backends with
+            <span class="text-[#c084fc]">Laravel</span> and <span class="text-[#c084fc]">Node.js</span>,
+            I bridge the gap between design and engineering.
+          </p>
+          <p class="text-zinc-400 leading-relaxed mt-4 text-base md:text-lg" data-i18n-html="about.p2">
+            Currently exploring AI integration and cloud-native solutions, I'm driven by the belief that great
+            software is built at the intersection of clean code, thoughtful architecture, and user-centric design.
+            Every project is an opportunity to push boundaries and deliver something exceptional.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-24 md:py-32 relative">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="reveal">
+        <h2 class="section-title text-3xl md:text-4xl font-bold tracking-tight mb-4" data-i18n-html="skills.title">
+          Skills & <span class="text-[#a855f7]">Expertise</span>
+        </h2>
+        <div class="section-divider mb-12"></div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="reveal reveal-delay-1">
+          <div class="glass rounded-xl p-6 h-full">
+            <h3 class="text-sm font-semibold text-zinc-400 uppercase tracking-wider mb-4" data-i18n="skills.frontend">Frontend</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-badge">React</span>
+              <span class="skill-badge">Vue.js</span>
+              <span class="skill-badge">JavaScript</span>
+              <span class="skill-badge">TypeScript</span>
+              <span class="skill-badge">HTML5</span>
+              <span class="skill-badge">CSS3</span>
+              <span class="skill-badge">Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <div class="glass rounded-xl p-6 h-full">
+            <h3 class="text-sm font-semibold text-zinc-400 uppercase tracking-wider mb-4" data-i18n="skills.backend">Backend</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-badge">Laravel</span>
+              <span class="skill-badge">Node.js</span>
+              <span class="skill-badge">Express.js</span>
+              <span class="skill-badge">PHP</span>
+              <span class="skill-badge">Python</span>
+              <span class="skill-badge">REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-3">
+          <div class="glass rounded-xl p-6 h-full">
+            <h3 class="text-sm font-semibold text-zinc-400 uppercase tracking-wider mb-4" data-i18n="skills.database">Database</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-badge">MySQL</span>
+              <span class="skill-badge">PostgreSQL</span>
+              <span class="skill-badge">MongoDB</span>
+              <span class="skill-badge">Redis</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-4">
+          <div class="glass rounded-xl p-6 h-full">
+            <h3 class="text-sm font-semibold text-zinc-400 uppercase tracking-wider mb-4" data-i18n="skills.devops">DevOps</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-badge">Docker</span>
+              <span class="skill-badge">Git</span>
+              <span class="skill-badge">AWS</span>
+              <span class="skill-badge">CI/CD</span>
+              <span class="skill-badge">Linux</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-5">
+          <div class="glass rounded-xl p-6 h-full">
+            <h3 class="text-sm font-semibold text-zinc-400 uppercase tracking-wider mb-4" data-i18n="skills.ai-tools">AI & Tools</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="skill-badge">OpenAI API</span>
+              <span class="skill-badge">LangChain</span>
+              <span class="skill-badge">TensorFlow.js</span>
+              <span class="skill-badge">Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-24 md:py-32 relative">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="reveal">
+        <h2 class="section-title text-3xl md:text-4xl font-bold tracking-tight mb-4" data-i18n-html="projects.title">
+          Featured <span class="text-[#a855f7]">Projects</span>
+        </h2>
+        <div class="section-divider mb-12"></div>
+      </div>
+
+      <!-- Featured Project: Optique Echouate -->
+      <div class="reveal reveal-delay-1 mb-8">
+        <div class="project-card featured group" onclick="window.location.href='projects/optique-echouate.html'">
+          <div class="grid md:grid-cols-2">
+            <div class="project-image" style="background: linear-gradient(135deg, #0f0c29 0%, #1a1a4e 50%, #24243e 100%);">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="text-center">
+                  <svg class="w-16 h-16 mx-auto mb-2 text-[#a855f7]/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                  <span class="text-xs text-zinc-500 font-mono">Optique Echouate</span>
                 </div>
-            </center>
-        </div>
-        <hr/>
-        <div>
-            <section class="dark">
-                <div class="container py-4">
-                    <h1 class="h1-text-center fade-in-scroll" id="pageHeaderTitle">
-                        <strong>PROJETS RÉALISÉS</strong>
-                        <hr/>
-                    </h1>
-
-                    <article article class="postcard dark red">
-                        <a class="postcard__img_link" href="">
-                            <img class="postcard__img" src="images/FlexiRent_red.png" alt="Image Title"/>
-                        </a>
-                        <div class="postcard__text">
-                            <h1 class="postcard__title red">
-                                <a href="">FlexiRent</a>
-                            </h1>
-                            <div class="postcard__subtitle small">
-                                <time datetime="2020-05-25 12:00:00">
-                                    <i class="fas fa-calendar-alt mr-2"></i>2024
-                                </time>
-                            </div>
-                            <div class="postcard__bar"></div>
-                            <div class="postcard__preview-txt">
-                                Site web dynamique permettant aux utilisateurs de louer divers
-                                                                                types de biens en ligne.
-                            </div>
-                            <ul class="postcard__tagbox">
-                                <li class="tag__item play red">
-                                    <a href="Pages/flexirent.html">
-                                        <i class="fas fa-play mr-2"></i>Lire la suite</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article article class="postcard dark red">
-                        <a class="postcard__img_link" href="">
-                            <img class="postcard__img" src="images/envtgr.png" alt="Image Title"/>
-                        </a>
-                        <div class="postcard__text">
-                            <h1 class="postcard__title red">
-                                <a href="">EVNTGR</a>
-                            </h1>
-                            <div class="postcard__subtitle small">
-                                <time datetime="2020-05-25 12:00:00">
-                                    <i class="fas fa-calendar-alt mr-2"></i>2024
-                                </time>
-                            </div>
-                            <div class="postcard__bar"></div>
-                            <div class="postcard__preview-txt">
-                                Application de gestion d'événements qui permettra aux
-                                                                                utilisateurs de créer, de modifier et de gérer les détails des
-                                                                                événements à venir.
-                            </div>
-                            <ul class="postcard__tagbox">
-                                <li class="tag__item play red">
-                                    <a href="">
-                                        <i class="fas fa-play mr-2"></i>Lire la suite</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article article class="postcard dark red">
-                        <a class="postcard__img_link" href="">
-                            <img class="postcard__img" src="images/G-N-RATEUR-AUTOMATIQUE-DE-PROGRAMMES-DE-GESTION-DE-DONN-ES--GAPRO-.jpg" alt="Image Title"/>
-                        </a>
-                        <div class="postcard__text">
-                            <h1 class="postcard__title red">
-                                <a href="">GÉNÉRATEUR AUTOMATIQUE DE PROGRAMMES DE GESTION DE DONNÉES
-                                                                                          (GAPRO)</a>
-                            </h1>
-                            <div class="postcard__subtitle small">
-                                <time datetime="2020-05-25 12:00:00">
-                                    <i class="fas fa-calendar-alt mr-2"></i>2023
-                                </time>
-                            </div>
-                            <div class="postcard__bar"></div>
-                            <div class="postcard__preview-txt"></div>
-                            <ul class="postcard__tagbox">
-                                <li class="tag__item play red">
-                                    <a href="">
-                                        <i class="fas fa-play mr-2"></i>Lire la suite</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-                    <article article class="postcard dark red">
-                        <a class="postcard__img_link" href="">
-                            <img class="postcard__img" src="images/lesstages.png" alt="Image Title"/>
-                        </a>
-                        <div class="postcard__text">
-                            <h1 class="postcard__title red">
-                                <a href="">lesstages</a>
-                            </h1>
-                            <div class="postcard__subtitle small">
-                                <time datetime="2020-05-25 12:00:00">
-                                    <i class="fas fa-calendar-alt mr-2"></i>2023
-                                </time>
-                            </div>
-                            <div class="postcard__bar"></div>
-                            <div class="postcard__preview-txt"></div>
-                            <ul class="postcard__tagbox">
-                                <li class="tag__item play red">
-                                    <a href="">
-                                        <i class="fas fa-play mr-2"></i>Lire la suite</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-                    <article article class="postcard dark red">
-                        <a class="postcard__img_link" href="Pages/sgp.html">
-                            <img class="postcard__img" src="images/vb2.png" alt="Image Title"/>
-                        </a>
-                        <div class="postcard__text">
-                            <h1 class="postcard__title red">
-                                <a href="Pages/sgp.html">GESTION DU PROJETS</a>
-                            </h1>
-                            <div class="postcard__subtitle small">
-                                <time datetime="2020-05-25 12:00:00">
-                                    <i class="fas fa-calendar-alt mr-2"></i>2023
-                                </time>
-                            </div>
-                            <div class="postcard__bar"></div>
-                            <div class="postcard__preview-txt">
-                                Le SGP (Système de Gestion et de Suivi de Projet) permet de
-                                                                                garder une trace des projets, des tâches, des membres qui les
-                                                                                ont réalisées, de la livraison et des commentaires associés.
-                            </div>
-                            <ul class="postcard__tagbox">
-                                <li class="tag__item play red">
-                                    <a href="Pages/sgp.html">
-                                        <i class="fas fa-play mr-2"></i>Lire la suite</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-                    <article article class="postcard dark red">
-                        <a class="postcard__img_link" href="Pages/Password_manager.html">
-                            <img class="postcard__img" src="images/psdm.png" alt="Image Title"/>
-                        </a>
-                        <div class="postcard__text">
-                            <h1 class="postcard__title red">
-                                <a href="Pages/Password_manager.html">PASSWORD MANAGER</a>
-                            </h1>
-                            <div class="postcard__subtitle small">
-                                <time datetime="2020-05-25 12:00:00">
-                                    <i class="fas fa-calendar-alt mr-2"></i>2023
-                                </time>
-                            </div>
-                            <div class="postcard__bar"></div>
-                            <div class="postcard__preview-txt">
-                                Une application sécurisée appelée Password Manager vous permet
-                                                                                de stocker et de gérer tous vos mots de passe. Il vous permet de
-                                                                                créer des comptes avec des noms d'utilisateur et des mots de
-                                                                                passe uniques et de stocker des informations supplémentaires,
-                                                                                comme des notes pour chaque compte.
-                            </div>
-                            <ul class="postcard__tagbox">
-                                <li class="tag__item play red">
-                                    <a href="Pages/Password_manager.html">
-                                        <i class="fas fa-play mr-2"></i>Lire la suite</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article article class="postcard dark red">
-                        <a class="postcard__img_link" href="Pages/Archima.html">
-                            <img class="postcard__img" src="images/Archima.png" alt="Image Title"/>
-                        </a>
-                        <div class="postcard__text">
-                            <h1 class="postcard__title red">
-                                <a href="Pages/Archima.html">ARCHIMA</a>
-                            </h1>
-                            <div class="postcard__subtitle small">
-                                <time datetime="2020-05-25 12:00:00">
-                                    <i class="fas fa-calendar-alt mr-2"></i>2023
-                                </time>
-                            </div>
-                            <div class="postcard__bar"></div>
-                            <div class="postcard__preview-txt">
-                                Afin de faciliter les interactions entre les architectes et les
-                                                                                clients potentiels, le site Web vise à fournir une plateforme en
-                                                                                ligne.
-                            </div>
-                            <ul class="postcard__tagbox">
-                                <li class="tag__item play red">
-                                    <a href="Pages/Archima.html">
-                                        <i class="fas fa-play mr-2"></i>Lire la suite</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article article class="postcard dark red">
-                        <a class="postcard__img_link" href="Pages/Pn.html">
-                            <img class="postcard__img" src="images/pressnetwork.png" alt="Image Title"/>
-                        </a>
-                        <div class="postcard__text">
-                            <h1 class="postcard__title red">
-                                <a href="Pages/Pn.html">PRESSNETWORK</a>
-                            </h1>
-                            <div class="postcard__subtitle small">
-                                <time datetime="2020-05-25 12:00:00">
-                                    <i class="fas fa-calendar-alt mr-2"></i>2022
-                                </time>
-                            </div>
-                            <div class="postcard__bar"></div>
-                            <div class="postcard__preview-txt">
-                                Projet PressNetwork pour un Organisme de Presse Média
-                                                                                Réalisation d'un site web pour un organisme de presse média,
-                                                                                diffusant des informations sur divers événements tels que le
-                                                                                sport, la culture, la politique, etc.
-                            </div>
-                            <ul class="postcard__tagbox">
-                                <li class="tag__item play red">
-                                    <a href="Pages/Pn.html">
-                                        <i class="fas fa-play mr-2"></i>Lire la suite</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article article class="postcard dark red">
-                        <a class="postcard__img_link" href="Pages/spc.html">
-                            <img class="postcard__img" src="images/DALL·E 2024-02-09 15.12.25 - SUPERCALCOLATOR app in a technologies bg.png" alt="Image Title"/>
-                        </a>
-                        <div class="postcard__text">
-                            <h1 class="postcard__title red">
-                                <a href="Pages/spc.html">SUPERCALCOLATOR</a>
-                            </h1>
-                            <div class="postcard__subtitle small">
-                                <time datetime="2020-05-25 12:00:00">
-                                    <i class="fas fa-calendar-alt mr-2"></i>2022
-                                </time>
-                            </div>
-                            <div class="postcard__bar"></div>
-                            <div class="postcard__preview-txt">
-                                La calculatrice MYSUPERCALCULATOR est une application développée
-                                                                                en VB.NET qui offre des fonctionnalités avancées de calcul. Elle
-                                                                                permet d'effectuer des opérations mathématiques telles que
-                                                                                l'addition, la soustraction, la multiplication et la division.
-                            </div>
-                            <ul class="postcard__tagbox">
-                                <li class="tag__item play red">
-                                    <a href="Pages/spc.html">
-                                        <i class="fas fa-play mr-2"></i>Lire la suite</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article article class="postcard dark red">
-                        <a class="postcard__img_link" href="Pages/s1p.html">
-                            <img class="postcard__img" src="images/s1p.png" alt="Image Title"/>
-                        </a>
-                        <div class="postcard__text">
-                            <h1 class="postcard__title red">
-                                <a href="Pages/s1p.html">SECTION 1 DE PROTECTION</a>
-                            </h1>
-                            <div class="postcard__subtitle small">
-                                <time datetime="2020-05-25 12:00:00">
-                                    <i class="fas fa-calendar-alt mr-2"></i>2022
-                                </time>
-                            </div>
-                            <div class="postcard__bar"></div>
-                            <div class="postcard__preview-txt">
-                                Ce site est dynamique et offre une gamme de services de sécurité
-                                                                                pour répondre à vos besoins. Que vous ayez besoin de contrôle
-                                                                                d'accès, d'accompagnement du personnel, de surveillance
-                                                                                d'espaces publics, de sécurisation après intrusion ou de
-                                                                                services pour des événements exceptionnels, nous sommes là pour
-                                                                                assurer votre sécurité.
-                            </div>
-                            <ul class="postcard__tagbox">
-                                <li class="tag__item play red">
-                                    <a href="Pages/s1p.html">
-                                        <i class="fas fa-play mr-2"></i>Lire la suite</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-
-                    <article article class="postcard dark red fade-in-scroll">
-                        <a class="postcard__img_link" href="Pages/locamoto.html">
-                            <img class="postcard__img" src="images/locamoto.jpg" alt="Image Title"/>
-                        </a>
-                        <div class="postcard__text">
-                            <h1 class="postcard__title">
-                                <a href="Pages/locamoto.html">LOCAMOTO</a>
-                            </h1>
-                            <div class="postcard__subtitle small">
-                                <time datetime="2020-05-25 12:00:00">
-                                    <i class="fas fa-calendar-alt mr-2"></i>2022
-                                </time>
-                            </div>
-                            <div class="postcard__bar"></div>
-                            <div class="postcard__preview-txt">
-                                Locamoto vous offre une solution pratique et abordable que vous
-                                                                                ayez besoin d'une moto pour une balade en ville, une escapade à
-                                                                                la campagne ou une aventure sur la route.
-                            </div>
-                            <ul class="postcard__tagbox">
-                                <li class="tag__item">
-                                    <a href="Pages/locamoto.html">
-                                        <i class="fas fa-play mr-2"></i>Lire la suire</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
-            </section>
-        </div>
-
-        <center>
-            <div class="container">
-                <hr/>
-                <div class="form-container" id="form-container">
-                    <form class="form" action="https://formsubmit.co/haitamelahmar1@gmail.com" method="POST">
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input required="" name="email" id="email" type="text"/>
-                        </div>
-                        <div class="form-group">
-                            <label for="textarea">Comment pouvons-nous vous aider?</label>
-                            <textarea required="" cols="50" rows="10" id="textarea" name="textarea"></textarea>
-                        </div>
-                        <button type="submit" class="form-submit-btn">Submit</button>
-                    </form>
-                </div>
+              </div>
+              <div class="overlay"></div>
             </div>
-        </center>
-        <hr/>
-        <div class="footer-clean">
-            <footer>
-                <center>
-                    <strong>Haitam EL AHMAR</strong>
-                </center>
-            </footer>
-        </div>
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <div class="p-6 md:p-8 flex flex-col justify-center">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-xs font-semibold text-[#a855f7] uppercase tracking-wider" data-i18n="projects.featured">Featured</span>
+                <span class="px-2 py-0.5 text-[10px] font-semibold rounded-full bg-[#a855f7]/10 text-[#a855f7] border border-[#a855f7]/20">2026</span>
+              </div>
+              <h3 class="text-xl md:text-2xl font-bold text-white mb-2" data-i18n="projects.optique.name">Optique Echouate</h3>
+              <p class="text-zinc-400 text-sm leading-relaxed mb-4" data-i18n="projects.optique.desc">
+                A production-grade e-commerce platform purpose-built for optical retail, featuring comprehensive product catalog management for glasses, lenses, and accessories. Implements real-time stock tracking, order lifecycle management, an admin dashboard with sales analytics, and a full shopping cart workflow with secure checkout — demonstrating end-to-end full-stack development with Laravel and React.
+              </p>
+              <div class="flex flex-wrap gap-1.5 mb-5">
+                <span class="tag">Laravel</span>
+                <span class="tag">React.js</span>
+                <span class="tag">MySQL</span>
+              </div>
+              <div class="flex items-center gap-3">
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </body>
+                <a href="https://github.com/Haitaam" target="_blank" rel="noopener noreferrer" class="btn-ghost text-xs" onclick="event.stopPropagation()">
+                  <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  <span data-i18n="projects.source">Source</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="reveal reveal-delay-2">
+          <div class="project-card group h-full flex flex-col" onclick="window.location.href='projects/restaurant-warda.html'">
+            <div class="project-image" style="background: linear-gradient(135deg, #1a0a0a 0%, #3e1a1a 50%, #2d1b1b 100%);">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <svg class="w-12 h-12 text-[#a855f7]/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z"/>
+                </svg>
+              </div>
+              <div class="overlay"></div>
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="px-1.5 py-0.5 text-[10px] font-semibold rounded-full bg-[#a855f7]/10 text-[#a855f7] border border-[#a855f7]/20">2026</span>
+              </div>
+              <h3 class="font-semibold text-white mb-1.5" data-i18n="projects.warda.name">Restaurant Warda</h3>
+              <p class="text-zinc-400 text-sm leading-relaxed mb-3 flex-1" data-i18n="projects.warda.desc">
+                A dynamic restaurant management system enabling online ordering, table reservations, and menu management. Built with a responsive, mobile-first UI to deliver a seamless experience across all devices — showcasing modern full-stack architecture with Laravel and React.
+              </p>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span class="tag">Laravel</span>
+                <span class="tag">React.js</span>
+                <span class="tag">MySQL</span>
+              </div>
+              <div class="flex items-center gap-3 pt-1">
+                <a href="https://github.com/Haitaam" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-zinc-500 hover:text-zinc-300 transition-colors" onclick="event.stopPropagation()" data-i18n="projects.github">GitHub →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-3">
+          <div class="project-card group h-full flex flex-col" onclick="window.location.href='projects/archima.html'">
+            <div class="project-image" style="background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3e 50%, #0f0f23 100%);">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <svg class="w-12 h-12 text-[#a855f7]/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                </svg>
+              </div>
+              <div class="overlay"></div>
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="px-1.5 py-0.5 text-[10px] font-semibold rounded-full bg-[#a855f7]/10 text-[#a855f7] border border-[#a855f7]/20">2025</span>
+              </div>
+              <h3 class="font-semibold text-white mb-1.5" data-i18n="projects.archima.name">Archima</h3>
+              <p class="text-zinc-400 text-sm leading-relaxed mb-3 flex-1" data-i18n="projects.archima.desc">
+                A purpose-built platform connecting architects with clients through user profiles, project listings, and an integrated messaging system. Features an advanced search engine for filtering by specialization, location, and project type — demonstrating proficiency in full-stack development with PHP and MySQL.
+              </p>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span class="tag">HTML</span>
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+              </div>
+              <div class="flex items-center gap-3 pt-1">
+                <a href="https://github.com/Haitaam" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-zinc-500 hover:text-zinc-300 transition-colors" onclick="event.stopPropagation()" data-i18n="projects.github">GitHub →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-4">
+          <div class="project-card group h-full flex flex-col" onclick="window.location.href='projects/flexirent.html'">
+            <div class="project-image" style="background: linear-gradient(135deg, #0a1a0a 0%, #1a3e1a 50%, #0f230f 100%);">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <svg class="w-12 h-12 text-[#a855f7]/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+                </svg>
+              </div>
+              <div class="overlay"></div>
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="px-1.5 py-0.5 text-[10px] font-semibold rounded-full bg-[#a855f7]/10 text-[#a855f7] border border-[#a855f7]/20">2024</span>
+              </div>
+              <h3 class="font-semibold text-white mb-1.5" data-i18n="projects.flexirent.name">Flexirent</h3>
+              <p class="text-zinc-400 text-sm leading-relaxed mb-3 flex-1" data-i18n="projects.flexirent.desc">
+                A versatile online rental marketplace supporting equipment, spaces, and apartment listings. Designed with an intuitive user interface and comprehensive user management, enabling seamless listing creation, booking management, and secure authentication — built with Laravel and Tailwind CSS.
+              </p>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span class="tag">Laravel</span>
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Tailwind CSS</span>
+              </div>
+              <div class="flex items-center gap-3 pt-1">
+                <a href="https://github.com/Haitaam" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-zinc-500 hover:text-zinc-300 transition-colors" onclick="event.stopPropagation()" data-i18n="projects.github">GitHub →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-5">
+          <div class="project-card group h-full flex flex-col" onclick="window.location.href='projects/project-management-system.html'">
+            <div class="project-image" style="background: linear-gradient(135deg, #1a0a1a 0%, #3e1a3e 50%, #230f23 100%);">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <svg class="w-12 h-12 text-[#a855f7]/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                </svg>
+              </div>
+              <div class="overlay"></div>
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="px-1.5 py-0.5 text-[10px] font-semibold rounded-full bg-[#a855f7]/10 text-[#a855f7] border border-[#a855f7]/20">2023</span>
+              </div>
+              <h3 class="font-semibold text-white mb-1.5" data-i18n="projects.pms.name">Project Management System</h3>
+              <p class="text-zinc-400 text-sm leading-relaxed mb-3 flex-1" data-i18n="projects.pms.desc">
+                A desktop application for task and project tracking with team member assignment, delivery milestone tracking, and threaded comments. Demonstrates proficiency in C# application development with Windows Forms and Microsoft Access database integration.
+              </p>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span class="tag">C#</span>
+                <span class="tag">Windows Forms</span>
+                <span class="tag">Microsoft Access</span>
+              </div>
+              <div class="flex items-center gap-3 pt-1">
+                <a href="https://github.com/Haitaam" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-zinc-500 hover:text-zinc-300 transition-colors" onclick="event.stopPropagation()" data-i18n="projects.github">GitHub →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-5">
+          <div class="project-card group h-full flex flex-col" onclick="window.location.href='projects/pressnetwork.html'">
+            <div class="project-image" style="background: linear-gradient(135deg, #1a0a2e 0%, #3e1a5e 50%, #2d0f3e 100%);">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <svg class="w-12 h-12 text-[#a855f7]/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/>
+                </svg>
+              </div>
+              <div class="overlay"></div>
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="px-1.5 py-0.5 text-[10px] font-semibold rounded-full bg-[#a855f7]/10 text-[#a855f7] border border-[#a855f7]/20">2024</span>
+              </div>
+              <h3 class="font-semibold text-white mb-1.5" data-i18n="projects.pressnetwork.name">PressNetwork</h3>
+              <p class="text-zinc-400 text-sm leading-relaxed mb-3 flex-1" data-i18n="projects.pressnetwork.desc">
+                A real-time news platform delivering live updates with a clean, reader-focused interface. Features category-based filtering, search functionality, and a fully responsive design optimized for all devices.
+              </p>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+              <div class="flex items-center gap-3 pt-1">
+                <a href="https://github.com/Haitaam" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-zinc-500 hover:text-zinc-300 transition-colors" onclick="event.stopPropagation()" data-i18n="projects.github">GitHub →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-5">
+          <div class="project-card group h-full flex flex-col" onclick="window.location.href='projects/airef.html'">
+            <div class="project-image" style="background: linear-gradient(135deg, #0a001a 0%, #2d0a4e 50%, #1a0033 100%);">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <svg class="w-12 h-12 text-[#a855f7]/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/>
+                </svg>
+              </div>
+              <div class="overlay"></div>
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="px-1.5 py-0.5 text-[10px] font-semibold rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20" data-i18n="projects.in-progress">In Progress</span>
+              </div>
+              <h3 class="font-semibold text-white mb-1.5" data-i18n="projects.airef.name">AI Referee (Airef)</h3>
+              <p class="text-zinc-400 text-sm leading-relaxed mb-3 flex-1" data-i18n="projects.airef.desc">
+                An AI-powered football referee system that analyzes match videos in real-time and detects fouls, penalties, yellow cards, and red cards. Uses computer vision to understand football gameplay and simulate professional referee decision-making.
+              </p>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span class="tag">Python</span>
+                <span class="tag">YOLO</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">Computer Vision</span>
+              </div>
+              <div class="flex items-center gap-3 pt-1">
+                <a href="https://github.com/Haitaam" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-zinc-500 hover:text-zinc-300 transition-colors" onclick="event.stopPropagation()" data-i18n="projects.github">GitHub →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-24 md:py-32 relative">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="reveal">
+        <h2 class="section-title text-3xl md:text-4xl font-bold tracking-tight mb-4" data-i18n-html="education.title">
+          Education <span class="text-[#a855f7]">Journey</span>
+        </h2>
+        <div class="section-divider mb-12"></div>
+      </div>
+
+      <div class="relative pl-10">
+        <div class="timeline-line"></div>
+
+        <div class="reveal reveal-delay-1">
+          <div class="relative mb-10">
+            <div class="timeline-dot"></div>
+            <div class="glass rounded-xl p-6 ml-4">
+              <span class="text-xs font-semibold text-[#a855f7] uppercase tracking-wider" data-i18n="education.sup-isi.period">2022 — Present</span>
+              <h3 class="text-lg font-bold text-white mt-1" data-i18n="education.sup-isi.name">Sup ISI</h3>
+              <p class="text-sm text-zinc-400 mt-1" data-i18n="education.sup-isi.subtitle">Computer Science & Engineering</p>
+              <p class="text-sm text-zinc-500 mt-2 leading-relaxed" data-i18n="education.sup-isi.desc">
+                Advanced studies in software engineering, algorithms, and distributed systems.
+                Focus on full-stack development and cloud architecture.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <div class="relative mb-10">
+            <div class="timeline-dot"></div>
+            <div class="glass rounded-xl p-6 ml-4">
+              <span class="text-xs font-semibold text-[#a855f7] uppercase tracking-wider" data-i18n="education.fede.period">2021 — 2024</span>
+              <h3 class="text-lg font-bold text-white mt-1" data-i18n="education.fede.name">FEDE</h3>
+              <p class="text-sm text-zinc-400 mt-1" data-i18n="education.fede.subtitle">European Business & Technology</p>
+              <p class="text-sm text-zinc-500 mt-2 leading-relaxed" data-i18n="education.fede.desc">
+                European diploma program combining business acumen with technology fundamentals.
+                Specialized in digital transformation and innovation management.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-3">
+          <div class="relative">
+            <div class="timeline-dot"></div>
+            <div class="glass rounded-xl p-6 ml-4">
+              <span class="text-xs font-semibold text-[#a855f7] uppercase tracking-wider" data-i18n="education.alx.period">2023 — 2024</span>
+              <h3 class="text-lg font-bold text-white mt-1" data-i18n="education.alx.name">ALX</h3>
+              <p class="text-sm text-zinc-400 mt-1" data-i18n="education.alx.subtitle">Software Engineering Program</p>
+              <p class="text-sm text-zinc-500 mt-2 leading-relaxed" data-i18n="education.alx.desc">
+                Intensive software engineering fellowship with focus on low-level programming,
+                algorithms, system design, and modern development practices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 md:py-32 relative">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="reveal">
+        <h2 class="section-title text-3xl md:text-4xl font-bold tracking-tight mb-4" data-i18n-html="contact.title">
+          Get In <span class="text-[#a855f7]">Touch</span>
+        </h2>
+        <div class="section-divider mb-10"></div>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <p class="text-zinc-400 mb-10 text-center" data-i18n="contact.subtitle">
+          Have a project in mind? Let's build something great together.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div class="reveal reveal-delay-2">
+          <form netlify name="contact" class="space-y-4">
+            <input type="hidden" name="form-name" value="contact">
+            <div>
+              <label for="name" class="sr-only" data-i18n="contact.name-placeholder">Name</label>
+              <input type="text" id="name" name="name" data-i18n-placeholder="contact.name-placeholder" placeholder="Your Name" required>
+            </div>
+            <div>
+              <label for="email" class="sr-only" data-i18n="contact.email-placeholder">Email</label>
+              <input type="email" id="email" name="email" data-i18n-placeholder="contact.email-placeholder" placeholder="Your Email" required>
+            </div>
+            <div>
+              <label for="message" class="sr-only" data-i18n="contact.message-placeholder">Message</label>
+              <textarea id="message" name="message" data-i18n-placeholder="contact.message-placeholder" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary w-full justify-center">
+              <span data-i18n="contact.send">Send Message</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <div class="reveal reveal-delay-3">
+          <div class="glass rounded-xl p-6 space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-[#a855f7]/10 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 text-[#a855f7]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <div>
+                  <h4 class="text-sm font-semibold text-white" data-i18n="contact.email-label">Email</h4>
+                <a href="mailto:haitamelahmar@gmail.com" class="text-sm text-zinc-400 hover:text-[#a855f7] transition-colors">haitamelahmar@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-[#a855f7]/10 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 text-[#a855f7]" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              <div>
+                <h4 class="text-sm font-semibold text-white" data-i18n="contact.whatsapp-label">WhatsApp</h4>
+                <a href="https://wa.me/212600092985" target="_blank" rel="noopener noreferrer" class="text-sm text-zinc-400 hover:text-[#a855f7] transition-colors">+212 600 09 29 85</a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-[#a855f7]/10 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5 text-[#a855f7]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </div>
+              <div>
+                <h4 class="text-sm font-semibold text-white" data-i18n="contact.github-label">GitHub</h4>
+                <a href="https://github.com/Haitaam" target="_blank" rel="noopener noreferrer" class="text-sm text-zinc-400 hover:text-[#a855f7] transition-colors">github.com/Haitaam</a>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary w-full justify-center">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                </svg>
+                <span data-i18n="contact.download-resume">Download Resume</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 py-10">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-2">
+          <span class="text-lg font-extrabold tracking-tight text-white">HA</span>
+          <span class="text-zinc-600 text-sm" data-i18n="footer.copyright">© 2026 Haitam El Ahmar</span>
+        </div>
+
+        <div class="flex items-center gap-6">
+          <a href="https://github.com/Haitaam" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-[#a855f7] transition-colors" aria-label="GitHub">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="mailto:haitamelahmar@gmail.com" class="text-zinc-500 hover:text-[#a855f7] transition-colors" aria-label="Email">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/212600092985" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-[#a855f7] transition-colors" aria-label="WhatsApp">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+    </svg>
+  </button>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>

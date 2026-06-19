@@ -7,11 +7,14 @@
   <meta name="description" content="AI-powered football referee system that analyzes match videos in real-time and detects fouls, penalties, yellow cards, and red cards using computer vision.">
   <meta name="theme-color" content="#000000">
 
+  <link rel="icon" type="image/png" href="../assets/HY_logo.png">
+  <link rel="apple-touch-icon" href="../assets/HY_logo.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23000'/%3E%3Ctext x='50' y='68' font-family='Inter,sans-serif' font-size='48' font-weight='800' fill='%23a855f7' text-anchor='middle'%3EHA%3C/text%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" href="../assets/HY_logo.png">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -34,7 +37,7 @@
     <div class="preloader-content">
       <div class="preloader-ring"></div>
       <div class="preloader-glow"></div>
-      <span class="preloader-logo">HA</span>
+      <img class="preloader-logo logo-glow" src="../assets/HY_logo.png" alt="HY">
     </div>
   </div>
 
@@ -46,14 +49,21 @@
     <div class="max-w-6xl mx-auto px-6">
       <div class="flex items-center justify-between h-16">
         <a href="../index.html" class="flex items-center gap-2 group" aria-label="Home">
-          <span class="text-xl font-extrabold tracking-tight text-white transition-colors duration-300 group-hover:text-[#a855f7]">HA</span>
+          <img class="h-16 w-auto logo-glow navbar-logo" src="../assets/HY_logo.png" alt="HY">
         </a>
-        <a href="../index.html#projects" class="back-link">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
-          </svg>
-          Back to Projects
-        </a>
+        <div class="flex items-center gap-3">
+          <a href="../index.html#projects" class="back-link">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+            </svg>
+            <span data-i18n="projects.page.back">Back to Projects</span>
+          </a>
+          <div class="flex items-center gap-1 ml-2">
+            <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+            <button class="lang-btn" data-lang="fr" aria-label="Fran\u00e7ais">FR</button>
+            <button class="lang-btn" data-lang="es" aria-label="Espa\u00f1ol">ES</button>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
@@ -63,14 +73,14 @@
     <div class="project-hero-bg" style="background: linear-gradient(135deg, rgba(10,0,26,0.95) 0%, rgba(45,10,78,0.8) 50%, rgba(26,0,51,0.95) 100%);"></div>
     <div class="project-hero-content max-w-4xl mx-auto px-6">
       <div class="reveal active">
-        <span class="inline-flex items-center gap-2 text-xs font-semibold text-amber-400 uppercase tracking-widest">
+        <span class="inline-flex items-center gap-2 text-xs font-semibold text-amber-400 uppercase tracking-widest" data-i18n="projects.airef.label">
           <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
           AI Research · In Development
         </span>
         <h1 class="hero-title text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mt-4 mb-4">
           AI Referee <span class="text-[#a855f7]">(Airef)</span>
         </h1>
-        <p class="text-lg md:text-xl text-zinc-400 font-light max-w-2xl mx-auto">
+        <p class="text-lg md:text-xl text-zinc-400 font-light max-w-2xl mx-auto" data-i18n="projects.airef.subtitle">
           An AI-powered football referee system using computer vision to analyze match footage and make real-time decisions
         </p>
       </div>
@@ -81,7 +91,7 @@
   <section class="py-20 md:py-28 relative">
     <div class="max-w-4xl mx-auto px-6">
       <div class="reveal">
-        <h2 class="section-title text-2xl md:text-3xl font-bold tracking-tight mb-4">Overview</h2>
+        <h2 class="section-title text-2xl md:text-3xl font-bold tracking-tight mb-4" data-i18n="projects.page.overview">Overview</h2>
         <div class="section-divider mb-8"></div>
       </div>
       <div class="reveal reveal-delay-1">
@@ -101,7 +111,7 @@
   <section class="py-20 md:py-28 relative video-section">
     <div class="max-w-4xl mx-auto px-6">
       <div class="reveal">
-        <h2 class="section-title text-2xl md:text-3xl font-bold tracking-tight mb-4">Demo Preview</h2>
+        <h2 class="section-title text-2xl md:text-3xl font-bold tracking-tight mb-4" data-i18n="projects.page.demo-preview">Demo Preview</h2>
         <div class="section-divider mb-8"></div>
       </div>
       <div class="reveal reveal-delay-1">
@@ -112,8 +122,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
           </div>
-          <h3 class="text-xl font-semibold text-white mb-3">Demo Coming Soon</h3>
-          <p class="text-zinc-400 max-w-md mx-auto">
+          <h3 class="text-xl font-semibold text-white mb-3" data-i18n="projects.page.demo-coming">Demo Coming Soon</h3>
+          <p class="text-zinc-400 max-w-md mx-auto" data-i18n="projects.page.demo-desc">
             A live demonstration video showcasing real-time football match analysis is currently in production. Stay tuned for updates as the system progresses through development.
           </p>
         </div>
@@ -125,7 +135,7 @@
   <section class="py-20 md:py-28 relative">
     <div class="max-w-5xl mx-auto px-6">
       <div class="reveal">
-        <h2 class="section-title text-2xl md:text-3xl font-bold tracking-tight mb-4">Key Features</h2>
+        <h2 class="section-title text-2xl md:text-3xl font-bold tracking-tight mb-4" data-i18n="projects.page.features">Key Features</h2>
         <div class="section-divider mb-8"></div>
       </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -182,7 +192,7 @@
   <section class="py-20 md:py-28 relative">
     <div class="max-w-4xl mx-auto px-6">
       <div class="reveal">
-        <h2 class="section-title text-2xl md:text-3xl font-bold tracking-tight mb-4">System Architecture</h2>
+        <h2 class="section-title text-2xl md:text-3xl font-bold tracking-tight mb-4" data-i18n="projects.page.architecture">System Architecture</h2>
         <div class="section-divider mb-8"></div>
       </div>
       <div class="reveal reveal-delay-1">
@@ -246,7 +256,7 @@
   <section class="py-20 md:py-28 relative">
     <div class="max-w-3xl mx-auto px-6">
       <div class="reveal">
-        <h2 class="section-title text-2xl md:text-3xl font-bold tracking-tight mb-4">Tech Stack</h2>
+        <h2 class="section-title text-2xl md:text-3xl font-bold tracking-tight mb-4" data-i18n="projects.page.tech-stack">Tech Stack</h2>
         <div class="section-divider mb-8"></div>
       </div>
       <div class="reveal reveal-delay-1 flex flex-wrap justify-center gap-3">
@@ -265,13 +275,13 @@
   <section class="py-20 md:py-28 relative">
     <div class="max-w-3xl mx-auto px-6 text-center">
       <div class="reveal">
-        <h2 class="section-title text-2xl md:text-3xl font-bold tracking-tight mb-4">Links</h2>
+        <h2 class="section-title text-2xl md:text-3xl font-bold tracking-tight mb-4" data-i18n="projects.page.links">Links</h2>
         <div class="section-divider mb-8"></div>
       </div>
       <div class="reveal reveal-delay-1 flex flex-wrap items-center justify-center gap-4">
         <a href="https://github.com/Haitaam" target="_blank" rel="noopener noreferrer" class="btn-primary">
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          View Source Code
+          <span data-i18n="projects.page.source">View Source Code</span>
         </a>
       </div>
     </div>
@@ -282,7 +292,7 @@
     <div class="max-w-6xl mx-auto px-6">
       <div class="flex flex-col md:flex-row items-center justify-between gap-6">
         <div class="flex items-center gap-2">
-          <span class="text-lg font-extrabold tracking-tight text-white">HA</span>
+          <img class="h-12 w-auto logo-glow" src="../assets/HY_logo.png" alt="HY">
           <span class="text-zinc-600 text-sm">© 2026 Haitam El Ahmar</span>
         </div>
         <div class="flex items-center gap-4">
@@ -298,7 +308,7 @@
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
           </a>
         </div>
-        <a href="../index.html#projects" class="back-link">← All Projects</a>
+        <a href="../index.html#projects" class="back-link" data-i18n="projects.page.back">← All Projects</a>
       </div>
     </div>
   </footer>

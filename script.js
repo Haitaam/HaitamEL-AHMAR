@@ -3,31 +3,53 @@ if (!currentLang || !['en', 'fr', 'es'].includes(currentLang)) {
   currentLang = 'en';
 }
 
+const introOverlay = document.getElementById('intro-overlay');
 const preloader = document.getElementById('preloader');
-if (preloader) {
+let introSeen = localStorage.getItem('introSeen');
+
+if (!introSeen && introOverlay) {
+  // First visit: play cinematic intro, skip preloader
+  if (preloader) preloader.style.display = 'none';
   document.body.classList.add('preloader-active');
-  let pageReady = false;
-  let timerDone = false;
 
-  function hidePreloader() {
-    if (pageReady && timerDone) {
-      preloader.classList.add('hidden');
-      document.body.classList.remove('preloader-active');
-      document.body.classList.add('loaded');
-      setTimeout(() => { preloader.style.display = 'none'; }, 700);
+  setTimeout(() => {
+    introOverlay.classList.add('hidden');
+    document.body.classList.remove('preloader-active');
+    document.body.classList.add('loaded');
+    localStorage.setItem('introSeen', 'true');
+    setTimeout(() => {
+      introOverlay.style.display = 'none';
+    }, 700);
+  }, 2700);
+} else {
+  // Returning visit: skip intro, run preloader
+  if (introOverlay) introOverlay.style.display = 'none';
+
+  if (preloader) {
+    document.body.classList.add('preloader-active');
+    let pageReady = false;
+    let timerDone = false;
+
+    function hidePreloader() {
+      if (pageReady && timerDone) {
+        preloader.classList.add('hidden');
+        document.body.classList.remove('preloader-active');
+        document.body.classList.add('loaded');
+        setTimeout(() => { preloader.style.display = 'none'; }, 700);
+      }
     }
-  }
 
-  setTimeout(() => { timerDone = true; hidePreloader(); }, 1500);
+    setTimeout(() => { timerDone = true; hidePreloader(); }, 1500);
 
-  if (document.readyState === 'complete') {
-    pageReady = true;
-    hidePreloader();
-  } else {
-    window.addEventListener('load', () => {
+    if (document.readyState === 'complete') {
       pageReady = true;
       hidePreloader();
-    });
+    } else {
+      window.addEventListener('load', () => {
+        pageReady = true;
+        hidePreloader();
+      });
+    }
   }
 }
 

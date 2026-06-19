@@ -796,11 +796,47 @@ body.preloader-active {
 }
 
 .preloader-logo {
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: #fff;
-  letter-spacing: -0.02em;
+  height: 8rem;
+  width: auto;
   animation: preloaderPulse 2s ease-in-out infinite;
+}
+
+/* === LOGO ANIMATION SYSTEM === */
+
+.logo-glow {
+  filter: drop-shadow(0 0 6px rgba(168, 85, 247, 0.15));
+  transition: filter 0.3s ease;
+}
+
+.logo-glow:hover {
+  filter: drop-shadow(0 0 12px rgba(168, 85, 247, 0.35));
+}
+
+.navbar-logo {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 14px rgba(168, 85, 247, 0.4));
+}
+
+.hero-logo {
+  opacity: 0;
+  transform: translateY(20px) scale(0.9);
+  animation: heroLogoIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes heroLogoIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 @keyframes preloaderSpin {
@@ -815,4 +851,59 @@ body.preloader-active {
 @keyframes preloaderPulse {
   0%, 100% { opacity: 0.6; }
   50% { opacity: 1; }
+}
+
+/* === CINEMATIC INTRO === */
+
+#intro-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#intro-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#intro-logo {
+  height: 6rem;
+  width: auto;
+  opacity: 0;
+  transform: translateY(15px) scale(0.85);
+  filter: drop-shadow(0 0 0px rgba(168, 85, 247, 0));
+  animation: introReveal 2.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes introReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(15px) scale(0.85);
+    filter: drop-shadow(0 0 0px rgba(168, 85, 247, 0));
+  }
+  9% {
+    opacity: 1;
+    transform: translateY(15px) scale(0.85);
+    filter: drop-shadow(0 0 0px rgba(168, 85, 247, 0));
+  }
+  55% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: drop-shadow(0 0 8px rgba(168, 85, 247, 0.2));
+  }
+  82% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: drop-shadow(0 0 18px rgba(168, 85, 247, 0.35));
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0) scale(1);
+    filter: drop-shadow(0 0 18px rgba(168, 85, 247, 0.35));
+  }
 }

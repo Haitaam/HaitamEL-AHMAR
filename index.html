@@ -354,6 +354,36 @@
       <!-- Project Grid (newest → oldest) -->
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="reveal reveal-delay-2">
+          <div class="project-card group h-full flex flex-col" onclick="window.location.href='projects/siele-practice.html'">
+            <div class="project-image" style="background-image: url('../assets/siele/01-homepage.png'); background-size: cover; background-position: center top;">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <svg class="w-12 h-12 text-[#a855f7]/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                </svg>
+              </div>
+              <div class="overlay"></div>
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="px-1.5 py-0.5 text-[10px] font-semibold rounded-full bg-[#a855f7]/10 text-[#a855f7] border border-[#a855f7]/20" data-i18n="projects.year.2026">2026</span>
+              </div>
+              <h3 class="font-semibold text-white mb-1.5" data-i18n="projects.siele.name">SIELE Practice</h3>
+              <p class="text-zinc-400 text-sm leading-relaxed mb-3 flex-1" data-i18n="projects.siele.desc">
+                An interactive SIELE exam preparation platform covering all four test sections — reading, listening, writing, and speaking. Features six task types per section with real exam audio and instant self-scoring, built with pure HTML, CSS, and JavaScript in a fully Spanish-language interface.
+              </p>
+              <div class="flex flex-wrap gap-1.5 mb-4">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="flex items-center gap-3 pt-1">
+                <a href="https://github.com/Haitaam/siele-practice" target="_blank" rel="noopener noreferrer" class="text-xs font-medium text-zinc-500 hover:text-zinc-300 transition-colors" onclick="event.stopPropagation()" data-i18n="projects.github">GitHub →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-2">
           <div class="project-card group h-full flex flex-col" onclick="window.location.href='projects/restaurant-warda.html'">
             <div class="project-image" style="background: linear-gradient(135deg, #1a0a0a 0%, #3e1a1a 50%, #2d1b1b 100%);">
               <div class="absolute inset-0 flex items-center justify-center">
